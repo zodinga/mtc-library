@@ -1,0 +1,206 @@
+*
+SECTION: COMMON;
+**/
+body {
+	font-family: Arial !important;
+	background-color: #fff !important;
+}
+#screen_area {
+	display: none;
+}
+#print_area {
+	margin: 0 30px;
+	display: block !important;
+}
+.print-page-break {
+	page-break-after: always;
+}
+/**
+END SECTION: COMMON;
+**/
+
+/**
+SECTION: ID CARD**/
+.idcard-form {
+	margin: 0 0 20px !important;
+}
+.idcard-preview-box .module-body {
+	overflow: auto !important;
+}
+.idcard {
+	color: #111 !important;
+	width:100% !important;
+	height: 187px !important;
+}
+.idcard .idcard-front {
+	float: left !important;
+	width: 300px !important;
+	height: 183px !important;
+	border: 1px solid #111 !important;
+	margin: 0 3px 5px 0 !important;
+}
+.idcard .idcard-front .idcard-header {
+	background-color: rgb(17, 84, 136) !important;
+	width: 100% !important;
+	text-align: center !important;
+	height: 50px !important;
+	padding: 0 !important;
+	float: left !important;
+}
+.idcard .idcard-front .idcard-header .idcard-pillar {
+	height: 50px !important;
+	text-align: center !important;
+	float: right !important;
+	width: 45px !important;
+	background: #F5F5F5 !important;
+	margin: 0 5px 0 0 !important;
+}
+.idcard .idcard-front .idcard-header .idcard-pillar img {
+	height: 47px !important;
+	width: 28px !important;
+	margin: 3px 0 0 !important;
+}
+.idcard .idcard-front .idcard-header span {
+	display: block !important;
+	color: #fff !important;
+	font-family: Arial !important;
+	font-size: 9px !important;
+	line-height: 12px !important;
+	font-weight: bold !important;
+}
+.idcard .idcard-front .idcard-header span.idcard-title {
+	margin: 4px 0 0 !important;
+}
+.idcard .idcard-front .idcard-header h3 {
+	font-size: 13px !important;
+	color: #fff !important;
+	margin: 4px 0 0 !important;
+}
+.idcard .idcard-front .idcard-body {
+	height: 80px !important;
+	width: 100% !important;
+	float: left !important;
+	margin: 6px 0 0 !important;
+}
+.idcard .idcard-front .idcard-body .idcard-photo {	
+	width: 45px !important;
+	height: 55px !important;
+	overflow: hidden !important;
+	margin: 0 5px 0 0 !important;
+	float: right !important;
+}
+.idcard .idcard-front .idcard-body .idcard-photo i {
+	font-size: 49px !important;
+}
+.idcard .idcard-front .idcard-body .idcard-detail {
+	width: 235px !important;
+	height: 80px !important;
+	margin: 0 0 0 10px !important;
+	float: left !important;	
+}
+.idcard .idcard-front .idcard-body .idcard-detail p {
+	font-size: 9px !important;
+	font-family: Tahoma !important;
+	padding: 0 !important;
+	margin: 0 !important;
+	vertical-align: top !important;
+	line-height: 13px !important;
+	float: left !important;
+	width: 100% !important;
+	color: #111 !important;
+}
+.idcard .idcard-front .idcard-body .idcard-detail p span.idcard-label {
+	float: left !important;
+	width: 62px !important;
+}
+.idcard .idcard-front .idcard-body .idcard-detail p span.idcard-separator {
+	float: left !important;
+	width: 10px !important;
+}
+.idcard .idcard-front .idcard-body .idcard-detail p span.idcard-value {
+	float: left !important;
+	font-weight: bold !important;
+}
+.idcard .idcard-front .idcard-footer {
+	float: left !important;
+	width: 100% !important;
+	height: 30px !important;
+	padding: 0 0 5px !important;
+}
+.idcard .idcard-front .idcard-footer .idcard-barcode {
+	float: left !important;
+	font-family: Arial !important;
+	color: #111 !important;
+	font-size: 11px !important;
+	font-weight: bold !important;
+	line-height: 100% !important;
+	margin: 14px auto 0 73px !important;
+}
+.idcard .idcard-back {
+	float: left !important;
+	width: 300px !important;
+	height: 183px !important;
+	border: 1px solid #111 !important;
+	padding: 0 10px !important;
+	position: relative !important;
+}
+.idcard .idcard-back h4 {
+	font-size: 8px !important;
+	text-transform: uppercase !important;
+	font-family: Arial !important;
+	margin: 0 !important;
+	padding: 8px 0 2px !important;
+	color:#111 !important;
+	font-weight: bold !important;
+}
+.idcard .idcard-back h4 span {
+	font-weight: normal !important;
+	text-transform: none !important;
+}
+.idcard .idcard-back pre {
+	font-family: Arial !important;
+	font-size: 9px !important;
+	line-height: 13px !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	background: none !important;
+	border: none !important;
+}
+.idcard .idcard-back hr {
+	margin: 0 !important;
+	background: #000 !important;
+	height: 1px !important;
+	border:none !important;
+}
+.idcard .idcard-back .idcard-signature {
+	font-size: 9px !important;
+	font-family: Arial !important;
+	color: #111 !important;
+	line-height: 12px !important;
+	position: absolute !important;
+	right: 10px !important;
+	bottom: 57px !important;
+}
+.idcard .idcard-back .terms {
+	position: absolute !important;
+	bottom: 10px !important;
+	width: 275px !important;
+}
+.idcard .idcard-back .terms ol {
+	padding: 5px 0 0 14px !important;
+	margin: 0 !important;
+}
+.idcard .idcard-back .terms li {
+	margin: 0 !important;
+	padding: 0 !important;
+	font-size: 9px !important;
+	color: red !important;
+}
+.idcard .idcard-back .idcard-logo {
+	position: absolute !important;
+	top: 6px !important;
+	right: 6px !important;
+}
+
+/**
+END SECTION: ID CARD*

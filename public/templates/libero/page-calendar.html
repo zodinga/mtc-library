@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Libero - Flat Admin Interface</title>
+	<!-- BOOTSTRAPS -->
+	<link type="text/css" href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<!-- THEMES -->
+	<link type="text/css" href="css/theme.css" rel="stylesheet">
+	<!--ICONS-->
+	<link type="text/css" href="icons/font-awesome/css/font-awesome.css" rel="stylesheet">
+	<!--FONTS-->
+	<link type='text/css'href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic,500italic,500,300italic,300' rel='stylesheet'>
+	<link type="text/css" href='http://fonts.googleapis.com/css?family=Fugaz+One|Leckerli+One' rel='stylesheet'>
+	<!--JAVASCRIPTS-->
+	<script src="js/jquery-1.9.1.min.js"></script>
+	<script src="js/jquery-ui-1.10.1.custom.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="frame"><div class="sidebar">
+<div class="wrapper">
+
+	<a href="page-profile.html" class="profile">
+		<img src="img/samples/avatar-2.jpg" class="avatar pull-left" width="30" style="margin-right: 15px; border-radius: 4px">
+		Andy Norman
+	</a>
+	<ul class="nav nav-list">
+		<li class="nav-header">Pages</li>
+		<li>
+			<a href="index.html"><i class="icon-dashboard"></i>Dashboard</a>
+		</li>
+		<!-- <li>
+			<a href="activity.html"><i class="icon-bullhorn"></i>Activity</a>
+		</li> -->
+		<li>
+			<a href="page-message.html"><i class="icon-inbox"></i>Message<b class="label">6</b></a>
+		</li>
+		<li>
+			<a href="page-people.html"><i class="icon-group"></i>People</a>
+		</li>
+		<li class="active" >
+			<a href="page-calendar.html"><i class="icon-calendar"></i>Calendar</a>
+		</li>
+		<li>
+			<a href="page-gallery.html"><i class="icon-picture"></i>Gallery</a>
+		</li>
+		<li>
+			<a href="page-profile.html"><i class="icon-user"></i>Profile</a>
+		</li>
+
+		<!--SEPARATE-->
+
+		<li class="nav-header">Elements</li>
+		<li>
+			<a href="element-typography.html"><i class="icon-text-width"></i>Typography</a>
+		</li>
+		<li>
+			<a href="element-layout.html"><i class="icon-desktop"></i>Layout</a>
+		</li>
+		<li>
+			<a href="element-tables.html"><i class="icon-table"></i>Tables</a>
+		</li>
+		<li>
+			<a href="element-form.html"><i class="icon-list-alt"></i>Form</a>
+		</li>
+		<li>
+			<a href="element-buttons.html"><i class="icon-pushpin"></i>Buttons</a>
+		</li>
+		<li>
+			<a href="element-icons.html"><i class="icon-truck"></i>Icons</a>
+		</li>
+		<li>
+			<a href="element-charts.html"><i class="icon-bar-chart"></i>Charts</a>
+		</li>
+
+		<!--SEPARATE-->
+
+		<li class="nav-header">Extra</li>
+		<li>
+			<a href="extra-login.html"><i class="icon-key"></i>Login</a>
+		</li>
+
+		<!--SEPARATE-->
+
+		<li class="nav-header">Bandwidth Transfer</li>
+		<li>
+			<div class="progress progress-danger small">
+				<div class="bar" style="width: 80%;"></div>
+			</div>
+			<div>19419.94 / 12000 MB</div>
+		</li>
+		<li class="nav-header">Disk Space Usage</li>
+		<li>
+			<div class="progress small">
+				<div class="bar" style="width: 20%;"></div>
+			</div>
+			<div>304.44 / 8000 MB</div>
+		</li>
+	</ul>
+</div>
+</div>
+<div class="content">
+
+	<div class="navbar navbar-static-tops">
+	<div class="navbar-inner">		
+		<a href="javascript:void(0);" class="btn pull-left toggle-sidebar hidden-desktop"><i class="icon-reorder"></i></a>
+		<a class="brand" href="index.html">libero</a>
+	</div>
+</div><!--/.navbar -->	
+	<div class="content-head">
+		<ul class="breadcrumb">
+			<li><a href="#">Home</a> <span class="divider"><i class="icon-angle-right"></i></span></li>
+			<li class="active">Calendar</li>
+		</ul>
+		<h2>Calendar</h2>
+		<div class="muted">
+			Sample description for blank page
+		</div>
+	</div>
+	<div class="content-body">
+
+		<section class="module">
+			<div class="module-head">
+				<b>Default</b>
+			</div><!--/.module-head-->
+			<div class="module-body">
+				<div id='calendar-default'></div>
+			</div><!--/.module-body-->
+		</section>
+
+		<section class="module">
+			<div class="module-head">
+				<b>Basic View</b>
+			</div><!--/.module-head-->
+			<div class="module-body">
+				<div id='calendar-basic'></div>
+			</div><!--/.module-body-->
+		</section>
+		
+		<section class="module">
+			<div class="module-head">
+				<b>Selectable</b>
+			</div><!--/.module-head-->
+			<div class="module-body">
+				<div id='calendar-selectable'></div>
+			</div><!--/.module-body-->
+		</section>
+
+		<section class="module">
+			<div class="module-head">
+				<b>External Dragging</b>
+			</div><!--/.module-head-->
+			<div class="module-body">
+				<div class="row-fluid">
+					<div class="span3">
+						<div class="module">
+							<div class="module-head">
+								<b>External Dragging</b>
+							</div><!--/.module-head-->
+							<div class="module-body">
+								<div id='external-events'>
+									<div class='external-event'>My Event 1</div>
+									<div class='external-event'>My Event 2</div>
+									<div class='external-event'>My Event 3</div>
+									<div class='external-event'>My Event 4</div>
+									<div class='external-event'>My Event 5</div>
+									<hr>
+									<label class="checkbox" for='drop-remove'>
+										<input type='checkbox' id='drop-remove' /> remove after drop
+									</label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="span9">
+						<div class="module">
+							<div class="module-body">
+								<div id='calendar-externaldragging'></div>
+							</div>
+						</div>
+					</div>
+			</div><!--/.module-body-->
+		</section>
+	</div>
+</div><!--/.content-->
+
+</div><!-- /.frame -->
+
+
+
+<!-- WYSIHTML5 TEXT EDITOR -->
+<script src="js/wysihtml5/advanced.js"></script>
+<script src="js/wysihtml5/wysihtml5-0.3.0.min.js"></script>
+<!-- AUTOSIZE TEXTAREA -->
+<script src='js/autosize/jquery.autosize-min.js'></script>
+<!-- BOOTSTRAP DATEPICKER -->
+<script src="js/bootstrap-datepicker.js"></script>
+<!-- FLOT CHART -->
+<script src="js/flot/jquery.flot.js"></script>
+<script src="js/flot/jquery.flot.pie.js"></script>
+<script src="js/flot/jquery.flot.resize.js"></script>
+<!-- FULLCALENDAR -->
+<script src="js/fullcalendar/fullcalendar.custom.js"></script> -->
+<!-- MIXITUP -->
+<script src="js/mixitup/jquery.mixitup.min.js"></script>
+<!-- THEME -->
+<script src="js/theme.js"></script>
+<!-- SCRIPTS: FLOT GRAPH BASIC -->
+<script type="text/javascript">
+$(function () {
+	var d1 = [ [0, 1], [1, 14], [2, 5], [3, 4], [4, 5], [5, 1], [6, 14], [7, 5],  [8, 5] ];
+	var d2 = [ [0, 5], [1, 2], [2, 10], [3, 1], [4, 9],  [5, 5], [6, 2], [7, 10], [8, 8] ];
+
+	var plot = $.plot($("#placeholder"), 
+	[ { data: d1, label: "Data A" }, { data: d2, label: "Data B" } ], {
+		lines: { 
+			show: true, 
+			fill: false, 
+			lineWidth: 1,
+			lineColor: "#fc0" 
+		},
+		points: { 
+			show: true, 
+			lineWidth: 4 
+		},
+		grid: {
+			clickable: true,
+			hoverable: true,
+			autoHighlight: true,
+			mouseActiveRadius: 10,
+			aboveData: true,
+			backgroundColor: "#fafafa",
+			borderWidth: 0,
+			borderColor: "#fc0",
+			minBorderMargin: 25,
+		},
+		colors: [ "#090", "#099",  "#609", "#900"],
+		shadowSize: 0
+	});
+
+	function showTooltip(x, y, contents) {
+		$('<div id="gridtip">' + contents + '</div>').css( {
+			position: 'absolute',
+			display: 'none',
+			top: y + 5,
+			left: x + 5
+		}).appendTo("body").fadeIn(300);
+	}
+
+	var previousPoint = null;
+	$("#placeholder").bind("plothover", function (event, pos, item) {
+		$("#x").text(pos.x.toFixed(2));
+		$("#y").text(pos.y.toFixed(2));
+
+		if (item) {
+			if (previousPoint != item.dataIndex) {
+				previousPoint = item.dataIndex;
+				
+				$("#gridtip").remove();
+				var x = item.datapoint[0].toFixed(0),
+					y = item.datapoint[1].toFixed(0);
+				
+				showTooltip(item.pageX, item.pageY,
+							"x : " + x + "&nbsp;&nbsp;&nbsp; y : " + y);
+			}
+		}
+		else {
+			$("#gridtip").remove();
+			previousPoint = null;            
+		}
+	});
+});
+</script>
+
+<!-- SCRIPTS: FLOT GRAPH ADVANCE -->
+<script type="text/javascript">
+$(function () {
+	var d1 = [ [0, 1], [1, 14], [2, 5], [3, 4], [4, 5], [5, 1], [6, 14], [7, 5],  [8, 5] ];
+	var d2 = [ [0, 5], [1, 2], [2, 10], [3, 1], [4, 9],  [5, 5], [6, 2], [7, 10], [8, 8] ];
+
+	var plot = $.plot($("#placeholder2"),
+		   [ { data: d1, label: "Data Y"}, { data: d2, label: "Data X" } ], {
+				lines: { 
+					show: true, 
+					fill: true, /*SWITCHED*/
+					lineWidth: 2 
+				},
+				points: { 
+					show: true, 
+					lineWidth: 3
+				},
+				grid: {
+					clickable: true,
+					hoverable: true,
+					autoHighlight: true,
+					mouseActiveRadius: 10,
+					aboveData: true,
+					backgroundColor: "#fafafa",
+					borderWidth: 0,
+					minBorderMargin: 25,
+				},
+				colors: [ "#090", "#099",  "#609", "#900"],
+				shadowSize: 0
+			 });
+
+	function showTooltip(x, y, contents) {
+		$('<div id="gridtip">' + contents + '</div>').css( {
+			position: 'absolute',
+			display: 'none',
+			top: y + 5,
+			left: x + 5
+		}).appendTo("body").fadeIn(300);
+	}
+
+	var previousPoint = null;
+	$("#placeholder2").bind("plothover", function (event, pos, item) {
+		$("#x").text(pos.x.toFixed(2));
+		$("#y").text(pos.y.toFixed(2));
+
+		if (item) {
+			if (previousPoint != item.dataIndex) {
+				previousPoint = item.dataIndex;
+				
+				$("#gridtip").remove();
+				var x = item.datapoint[0].toFixed(0),
+					y = item.datapoint[1].toFixed(0);
+				
+				showTooltip(item.pageX, item.pageY,
+							"x : " + x + "&nbsp;&nbsp;&nbsp; y : " + y);
+			}
+		}
+		else {
+			$("#gridtip").remove();
+			previousPoint = null;            
+		}
+	});
+});
+</script>
+
+<!-- SCRIPTS: CHARTS -->
+<script>
+	// PREDEFINED DATA
+	var data = [
+					{ label: "Series1",  data: [[1,10]]},
+					{ label: "Series2",  data: [[1,30]]},
+					{ label: "Series3",  data: [[1,90]]}
+				];
+
+	// // DEFAULT
+	// $.plot($("#pie-default"), data, 
+	// {
+	// 	series: {
+	// 		pie: {
+	// 			show: true
+	// 		}
+	// 	}
+	// });
+
+	// DEFINE ACTIONS FOR pieHover & pieClick
+	function pieHover(event, pos, obj) 
+	{
+		if (!obj)
+					return;
+		percent = parseFloat(obj.series.percent).toFixed(2);
+		$("#hover").html('<span>'+obj.series.label+' - '+percent+'%</span>');
+	}
+
+	function pieClick(event, pos, obj) 
+	{
+		if (!obj)
+					return;
+		percent = parseFloat(obj.series.percent).toFixed(2);
+		alert(''+obj.series.label+': '+percent+'%');
+	}
+
+	// DONUT
+	$.plot($("#pie-donut"), data, 
+	{
+		series: {
+			pie: { 
+				innerRadius: 50,
+				show: true
+			}
+		}
+	});
+
+	// DONUT + INTERACTIVE
+	$.plot($("#pie-interactive"), data,
+	{
+			series: {
+				pie: {
+					innerRadius: 50,
+					show: true
+				}
+			},
+			grid: {
+				hoverable: true,
+				clickable: true
+			}
+	});
+
+	$("#pie-interactive").bind("plothover", pieHover);
+	$("#pie-interactive").bind("plotclick", pieClick);
+</script>
+</body>

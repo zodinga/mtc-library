@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Libero - Flat Admin Interface</title>
+	<!-- BOOTSTRAPS -->
+	<link type="text/css" href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<!-- THEMES -->
+	<link type="text/css" href="css/theme.css" rel="stylesheet">
+	<!--ICONS-->
+	<link type="text/css" href="icons/font-awesome/css/font-awesome.css" rel="stylesheet">
+	<!--FONTS-->
+	<link type='text/css'href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic,500italic,500,300italic,300' rel='stylesheet'>
+	<link type="text/css" href='http://fonts.googleapis.com/css?family=Fugaz+One|Leckerli+One' rel='stylesheet'>
+	<!--JAVASCRIPTS-->
+	<script src="js/jquery-1.9.1.min.js"></script>
+	<script src="js/jquery-ui-1.10.1.custom.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="frame"><div class="sidebar">
+<div class="wrapper">
+
+	<a href="page-profile.html" class="profile">
+		<img src="img/samples/avatar-2.jpg" class="avatar pull-left" width="30" style="margin-right: 15px; border-radius: 4px">
+		Andy Norman
+	</a>
+	<ul class="nav nav-list">
+		<li class="nav-header">Pages</li>
+		<li>
+			<a href="index.html"><i class="icon-dashboard"></i>Dashboard</a>
+		</li>
+		<!-- <li>
+			<a href="activity.html"><i class="icon-bullhorn"></i>Activity</a>
+		</li> -->
+		<li>
+			<a href="page-message.html"><i class="icon-inbox"></i>Message<b class="label">6</b></a>
+		</li>
+		<li>
+			<a href="page-people.html"><i class="icon-group"></i>People</a>
+		</li>
+		<li>
+			<a href="page-calendar.html"><i class="icon-calendar"></i>Calendar</a>
+		</li>
+		<li>
+			<a href="page-gallery.html"><i class="icon-picture"></i>Gallery</a>
+		</li>
+		<li class="active" >
+			<a href="page-profile.html"><i class="icon-user"></i>Profile</a>
+		</li>
+
+		<!--SEPARATE-->
+
+		<li class="nav-header">Elements</li>
+		<li>
+			<a href="element-typography.html"><i class="icon-text-width"></i>Typography</a>
+		</li>
+		<li>
+			<a href="element-layout.html"><i class="icon-desktop"></i>Layout</a>
+		</li>
+		<li>
+			<a href="element-tables.html"><i class="icon-table"></i>Tables</a>
+		</li>
+		<li>
+			<a href="element-form.html"><i class="icon-list-alt"></i>Form</a>
+		</li>
+		<li>
+			<a href="element-buttons.html"><i class="icon-pushpin"></i>Buttons</a>
+		</li>
+		<li>
+			<a href="element-icons.html"><i class="icon-truck"></i>Icons</a>
+		</li>
+		<li>
+			<a href="element-charts.html"><i class="icon-bar-chart"></i>Charts</a>
+		</li>
+
+		<!--SEPARATE-->
+
+		<li class="nav-header">Extra</li>
+		<li>
+			<a href="extra-login.html"><i class="icon-key"></i>Login</a>
+		</li>
+
+		<!--SEPARATE-->
+
+		<li class="nav-header">Bandwidth Transfer</li>
+		<li>
+			<div class="progress progress-danger small">
+				<div class="bar" style="width: 80%;"></div>
+			</div>
+			<div>19419.94 / 12000 MB</div>
+		</li>
+		<li class="nav-header">Disk Space Usage</li>
+		<li>
+			<div class="progress small">
+				<div class="bar" style="width: 20%;"></div>
+			</div>
+			<div>304.44 / 8000 MB</div>
+		</li>
+	</ul>
+</div>
+</div>
+<div class="content">
+
+	<div class="navbar navbar-static-tops">
+	<div class="navbar-inner">		
+		<a href="javascript:void(0);" class="btn pull-left toggle-sidebar hidden-desktop"><i class="icon-reorder"></i></a>
+		<a class="brand" href="index.html">libero</a>
+	</div>
+</div><!--/.navbar -->	
+	<div class="content-head">
+		<ul class="breadcrumb">
+			<li><a href="#">Home</a> <span class="divider"><i class="icon-angle-right"></i></span></li>
+			<li><a href="#">People</a> <span class="divider"><i class="icon-angle-right"></i></span></li>
+			<li class="active">Andy Norman</li>
+		</ul>
+		<div class="profile-head" style="overflow: hidden">
+			<img src="img/samples/avatar-2.jpg" class="avatar img-radius pull-left" style="margin-right: 25px; width: 100px; border-radius: 4px">
+			<div style="overflow:hidden">
+				<h2 class="profile-name">Andy Norman</h2>
+				<div class="profile-brief muted">
+					Front-end Developer & UI Designer
+				</div>
+				<div class="">
+					<a href="#" class="btn btn-primary">
+						<i class="icon-plus"></i>
+						<span class="visible-desktop">Follow</span>
+					</a>
+					<a href="#" class="btn btn-success">
+						<i class="icon-ok"></i>
+						<span class="visible-desktop">Following</span>
+					</a>
+					<a href="#" class="btn btn-">
+						<i class="icon-envelope-alt visible-desktop"></i> 
+						Send Message
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="content-body">
+		<section class="row-fluid">
+			<div class="span8">
+				<section class="module no-head feed-composer">
+					<div class="module-body">
+						<p><textarea rows="2" class="input-block-level autosize-normal" placeholder="Share a status by using this autosize textarea..."></textarea></p>
+						<div>
+							<button class="btn btn-primary pull-right">Share status</button>
+							<a href="#" class="btn btn-smalls">
+								<i class="icon-camera shaded"></i>
+							</a>
+							<a href="#" class="btn btn-smalls">
+								<i class="icon-facetime-video shaded"></i>
+							</a>
+							<a href="#" class="btn btn-smalls">
+								<i class="icon-map-marker shaded"></i>
+							</a>
+						</div>
+					</div>
+				</section>
+				<section class="feed-stream">
+						<article class="feed">
+							<div class="feed-head">
+								<a href="#" class="feed-avatar avatar-link pull-left">
+									<img src="img/samples/avatar-1.jpg" class="avatar">
+								</a>
+								<div class="dropdown pull-right">
+									<a class="dropdown-toggle btn" data-toggle="dropdown" href="#"><i class="icon-ellipsis-vertical"></i></a>
+									<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+										<li><a href="#">First Row</a></li>
+										<li><a href="#">Second Row</a></li>
+										<li><a href="#">Third Row</a></li>
+										<li><a href="#">Fourth Row</a></li>
+									</ul>
+								</div>
+								<div class="feed-author"><b>Brian Lamb</b></div>
+								<div class="feed-meta small muted">2 Feb, from Kuala Lumpur, Malaysia</div>
+							</div>
+							<div class="feed-body">
+								Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+
+								<div class="feed-options" style="margin-top: 10px;">
+									<div class="btn-group">
+										<a href="#" class="btn btn-small">
+											<i class="icon-thumbs-up shaded"></i>
+											Like
+										</a>
+										<a href="#" class="btn btn-small">
+											<i class="icon-reply shaded"></i>
+											Reply
+										</a>
+										<a href="#" class="btn btn-small">
+											<i class="icon-retweet shaded"></i>
+											Repost
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="feed-foot">
+								<div class="feed-comments">
+									<div class="comment">
+										<a href="#" class="comment-avatar pull-left">
+											<img src="img/samples/avatar-1.jpg" class="avatar">
+										</a>
+										<div class="comment-content">
+											<div class="comment-head">
+												<a href="#"><b>Brian Lamb</b></a>
+												<small class="muted">2 hours ago</small>
+											</div>
+											<div class="comment-text">
+												Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+											</div>
+										</div>
+									</div>
+									<div class="comment">
+										<a href="#" class="comment-avatar pull-left">
+											<img src="img/samples/avatar-2.jpg" class="avatar">
+										</a>
+										<div class="comment-content">
+											<div class="comment-head">
+												<a href="#"><b>Andy Norman</b></a>
+												<small class="muted">2 hours ago</small>
+											</div>
+											<div class="comment-text">
+												Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+											</div>
+										</div>
+									</div>
+									<div class="comment">
+										<a href="#" class="comment-avatar pull-left">
+											<img src="img/samples/avatar-3.jpg" class="avatar">
+										</a>
+										<div class="comment-content">
+											<div class="comment-head">
+												<a href="#"><b>Clara Jones</b></a>
+												<small class="muted">2 hours ago</small>
+											</div>
+											<div class="comment-text">
+												Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+											</div>
+										</div>
+									</div>
+								</div>
+								<textarea rows="1" class="input-block-level autosize-normal" placeholder="Try this autosize textarea..."></textarea>
+							</div>
+						</article><!--/.feed-->
+
+						<article class="feed">
+							<div class="feed-head">
+								<a href="#" class="feed-avatar avatar-link pull-left">
+									<img src="img/samples/avatar-2.jpg" class="avatar">
+								</a>
+								<div class="feed-author"><b>Andy Norman</b> shared a photo</div>
+								<div class="feed-meta small muted">2 Feb, from Kuala Lumpur, Malaysia</div>
+							</div>
+							<div class="feed-body">
+								Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+								<div class="feed-attachment">
+									<img src="img/samples/image-1.jpg">
+								</div>
+								<div class="feed-options" style="margin-top: 10px;">
+									<div class="btn-group">
+										<a href="#" class="btn btn-small">
+											<i class="icon-thumbs-up shaded"></i>
+											Like
+										</a>
+										<a href="#" class="btn btn-small">
+											<i class="icon-reply shaded"></i>
+											Reply
+										</a>
+										<a href="#" class="btn btn-small">
+											<i class="icon-retweet shaded"></i>
+											Repost
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="feed-foot">
+								<textarea rows="1" class="input-block-level autosize-normal" placeholder="Try this autosize textarea..."></textarea>
+							</div>
+						</article><!--/.feed-->
+
+						<article class="feed">
+							<div class="feed-head">
+								<a href="#" class="feed-avatar avatar-link pull-left">
+									<img src="img/samples/avatar-3.jpg" class="avatar">
+								</a>
+								<div class="feed-author">
+									<b>Clara Jones</b>
+									shared a video
+								</div>
+								<div class="feed-meta small muted">2 Feb, from Kuala Lumpur, Malaysia</div>
+							</div>
+							<div class="feed-body">
+								Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+								<div class="feed-attachment">
+									<div class="responsive-video">
+										<iframe width="560" height="315" src="http://www.youtube.com/embed/3oem-M2tQU4" frameborder="0" allowfullscreen></iframe>
+									</div>
+								</div>
+								<div class="feed-options" style="margin-top: 10px;">
+									<div class="btn-group">
+										<a href="#" class="btn btn-small">
+											<i class="icon-thumbs-up shaded"></i>
+											Like
+										</a>
+										<a href="#" class="btn btn-small">
+											<i class="icon-reply shaded"></i>
+											Reply
+										</a>
+										<a href="#" class="btn btn-small">
+											<i class="icon-retweet shaded"></i>
+											Repost
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="feed-foot">
+								<textarea rows="1" class="input-block-level autosize-normal" placeholder="Try this autosize textarea..."></textarea>
+							</div>
+						</article><!--/.feed-->
+
+						<article class="feed">
+							<div class="feed-head">
+								<a href="#" class="feed-avatar avatar-link pull-left">
+									<img src="img/samples/avatar-4.jpg" class="avatar">
+								</a>
+								<div class="feed-author"><b>Darren Hugh</b></div>
+								<div class="feed-meta small muted">2 Feb, from Kuala Lumpur, Malaysia</div>
+							</div>
+							<div class="feed-body">
+								Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+
+								<div class="feed-options" style="margin-top: 10px;">
+									<div class="btn-group">
+										<a href="#" class="btn btn-small">
+											<i class="icon-thumbs-up shaded"></i>
+											Like
+										</a>
+										<a href="#" class="btn btn-small">
+											<i class="icon-reply shaded"></i>
+											Reply
+										</a>
+										<a href="#" class="btn btn-small">
+											<i class="icon-retweet shaded"></i>
+											Repost
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="feed-foot">
+								<textarea rows="1" class="input-block-level autosize-normal" placeholder="Try this autosize textarea..."></textarea>
+							</div>
+						</article><!--/.feed-->
+
+						<article class="feed">
+							<div class="feed-head">
+								<a href="#" class="feed-avatar avatar-link pull-left">
+									<img src="img/samples/avatar-1.jpg" class="avatar">
+								</a>
+								<div class="feed-author"><b>Brian Lamb</b></div>
+								<div class="feed-meta small muted">2 Feb, from Kuala Lumpur, Malaysia</div>
+							</div>
+							<div class="feed-body">
+								Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+
+								<div class="feed-options" style="margin-top: 10px;">
+									<div class="btn-group">
+										<a href="#" class="btn btn-small">
+											<i class="icon-thumbs-up shaded"></i>
+											Like
+										</a>
+										<a href="#" class="btn btn-small">
+											<i class="icon-reply shaded"></i>
+											Reply
+										</a>
+										<a href="#" class="btn btn-small">
+											<i class="icon-retweet shaded"></i>
+											Repost
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="feed-foot">
+								<textarea rows="1" class="input-block-level autosize-normal" placeholder="Try this autosize textarea..."></textarea>
+							</div>
+						</article><!--/.feed-->
+				</section><!--/.feeds-->
+			</div><!--/.span7-->
+			<div class="span4">
+				<section class="module">
+					<div class="module-head">
+						<b>Location</b>
+					</div><!--/.module-head-->
+					<div class="module-body">
+						<div class="map">
+							<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com.my/?ie=UTF8&amp;ll=3.139003,101.686855&amp;spn=0.609509,1.056747&amp;t=m&amp;z=11&amp;output=embed"></iframe>
+						</div>
+						<hr />
+						<div class="row-fluid">
+							<div class="span7">
+								<address>
+									<strong>Twitter, Inc.</strong><br>
+									795 Folsom Ave, Suite 600<br>
+									San Francisco, CA 94107<br>
+									<abbr title="Phone">P:</abbr> (123) 456-7890
+								</address>
+							</div>
+							<div class="span5">
+								<address>
+									<strong>Email</strong><br>
+									brianlamb@mail.cc
+								</address>
+								<address>
+									<strong>Phone</strong><br>
+									+6 012 345 6789
+								</address>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="module">
+					<div class="module-head">
+						<b>Connection</b>
+					</div><!--/.module-head-->
+					<div class="module-body no-padding">
+						<ul class="module-list">
+							<li>
+								<p>
+									<b>Friends</b>
+									-
+									<span class="muted">1,235</span>
+								</p>
+								<div>
+									<ul class="thumbs grid-5 grid-tablet-4 grid-mobile-5">
+										<li>
+											<a href="#" class="thumb">
+												<img src="img/samples/avatar-1.jpg" class="avatar" />
+											</a>
+										</li>
+										<li>
+											<a href="#" class="thumb">
+												<img src="img/samples/avatar-3.jpg" class="avatar" />
+											</a>
+										</li>
+										<li>
+											<a href="#" class="thumb">
+												<img src="img/samples/avatar-2.jpg" class="avatar" />
+											</a>
+										</li>
+										<li>
+											<a href="#" class="thumb">
+												<img src="img/samples/avatar-4.jpg" class="avatar" />
+											</a>
+										</li>
+										<li>
+											<a href="#" class="thumb">
+												<img src="img/samples/avatar-1.jpg" class="avatar" />
+											</a>
+										</li>
+										<li>
+											<a href="#" class="thumb">
+												<img src="img/samples/avatar-2.jpg" class="avatar" />
+											</a>
+										</li>
+										<li>
+											<a href="#" class="thumb">
+												<img src="img/samples/avatar-4.jpg" class="avatar" />
+											</a>
+										</li>
+										<li>
+											<a href="#" class="thumb">
+												<img src="img/samples/avatar-3.jpg" class="avatar" />
+											</a>
+										</li>
+										<li>
+											<a href="#" class="thumb">
+												<img src="img/samples/avatar-1.jpg" class="avatar" />
+											</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<p>
+									<b>Mutual Friends</b>
+									-
+									<span class="muted">235</span>
+								</p>
+								<div>
+									<ul class="thumbs grid-5 grid-tablet-4 grid-mobile-5">
+										<li>
+											<a href="#" class="thumb">
+												<img src="img/samples/avatar-1.jpg" class="avatar" />
+											</a>
+										</li>
+										<li>
+											<a href="#" class="thumb">
+												<img src="img/samples/avatar-3.jpg" class="avatar" />
+											</a>
+										</li>
+										<li>
+											<a href="#" class="thumb">
+												<img src="img/samples/avatar-2.jpg" class="avatar" />
+											</a>
+										</li>
+										<li>
+											<a href="#" class="thumb">
+												<img src="img/samples/avatar-4.jpg" class="avatar" />
+											</a>
+										</li>
+										<li>
+											<a href="#" class="thumb">
+												<img src="img/samples/avatar-1.jpg" class="avatar" />
+											</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div><!--/.module-body-->
+				</section>
+
+				<section class="module">
+					<div class="module-head">
+						<b>Basic Information</b>
+					</div><!--/.module-head-->
+					<div class="module-body no-padding">
+						<ul class="module-list">
+							<li>
+								<p><b>Gender</b></p>
+								<div>Male</div>
+							</li>
+							<li>
+								<p><b>Looking for</b></p>
+								<div>Who are you lookindivfor?</dd>
+							</li>
+							<li>
+								<p><b>Birthday</b></p>
+								<div>January 10</div>
+							</li>
+							<li>
+								<p><b>Relationship</b></p>
+								<div>Single</div>
+							</li>
+							<li>
+								<p><b>Other Names</b></p>
+								<div>Sparky</div>
+							</li>
+						</ul>
+					</div><!--/.module-body-->
+				</section>
+
+				<section class="module">
+					<div class="module-head">
+						<b>Story</b>
+					</div><!--/.module-head-->
+					<div class="module-body no-padding">
+						<ul class="module-list">
+							<li>
+								<p><b>Tagline</b></p>
+								<div>A brief description of you</div>
+							</li>
+							<li>
+								<p><b>Introduction</b></p>
+								<div>Put a little about yourself here so people know they've found the correct person.</div>
+							</li>
+							<li>
+								<p><b>Bragging rights</b></p>
+								<div>Examples: survived high school, have 3 kids, etc.</div>
+							</li>
+						</ul>
+					</div><!--/.module-body-->
+				</section>
+
+				<section class="module">
+					<div class="module-head">
+						<b>Work</b>
+					</div><!--/.module-head-->
+					<div class="module-body no-padding">
+						<ul class="module-list">
+							<li>
+								<p><b>Occupation</b></p>
+								<div>What do you do?</div>
+							</li>
+							<li>
+								<p><b>Skills</b></p>
+								<div>What are your skills?</div>
+							</li>
+							<li>
+								<p><b>Employment</b></p>
+								<ol>
+									<li>
+										<b>Yahooo Inc.</b>
+										<div>
+											Sr. Front-end Developer & UI Designer. 
+										</div>
+										<div class="muted">
+											2012 - Present
+										</div>
+									</li>
+									<li>
+										<b>Google Corp.</b>
+										<div>
+											Sr. Front-end Developer & UI Designer. 
+										</div>
+										<div class="muted">
+											2010 - 2012
+										</div>
+									</li>
+								</ol>
+							</li>
+						</ul>
+					</div><!--/.module-body-->
+				</section>
+			</div><!--/.span5-->
+		</section><!--/.row-fluid-->
+	</div><!--/.content-body-->
+</div><!--/.content-->
+
+</div><!-- /.frame -->
+
+
+
+<!-- WYSIHTML5 TEXT EDITOR -->
+<script src="js/wysihtml5/advanced.js"></script>
+<script src="js/wysihtml5/wysihtml5-0.3.0.min.js"></script>
+<!-- AUTOSIZE TEXTAREA -->
+<script src='js/autosize/jquery.autosize-min.js'></script>
+<!-- BOOTSTRAP DATEPICKER -->
+<script src="js/bootstrap-datepicker.js"></script>
+<!-- FLOT CHART -->
+<script src="js/flot/jquery.flot.js"></script>
+<script src="js/flot/jquery.flot.pie.js"></script>
+<script src="js/flot/jquery.flot.resize.js"></script>
+<!-- FULLCALENDAR -->
+<script src="js/fullcalendar/fullcalendar.custom.js"></script> -->
+<!-- MIXITUP -->
+<script src="js/mixitup/jquery.mixitup.min.js"></script>
+<!-- THEME -->
+<script src="js/theme.js"></script>
+<!-- SCRIPTS: FLOT GRAPH BASIC -->
+<script type="text/javascript">
+$(function () {
+	var d1 = [ [0, 1], [1, 14], [2, 5], [3, 4], [4, 5], [5, 1], [6, 14], [7, 5],  [8, 5] ];
+	var d2 = [ [0, 5], [1, 2], [2, 10], [3, 1], [4, 9],  [5, 5], [6, 2], [7, 10], [8, 8] ];
+
+	var plot = $.plot($("#placeholder"), 
+	[ { data: d1, label: "Data A" }, { data: d2, label: "Data B" } ], {
+		lines: { 
+			show: true, 
+			fill: false, 
+			lineWidth: 1,
+			lineColor: "#fc0" 
+		},
+		points: { 
+			show: true, 
+			lineWidth: 4 
+		},
+		grid: {
+			clickable: true,
+			hoverable: true,
+			autoHighlight: true,
+			mouseActiveRadius: 10,
+			aboveData: true,
+			backgroundColor: "#fafafa",
+			borderWidth: 0,
+			borderColor: "#fc0",
+			minBorderMargin: 25,
+		},
+		colors: [ "#090", "#099",  "#609", "#900"],
+		shadowSize: 0
+	});
+
+	function showTooltip(x, y, contents) {
+		$('<div id="gridtip">' + contents + '</div>').css( {
+			position: 'absolute',
+			display: 'none',
+			top: y + 5,
+			left: x + 5
+		}).appendTo("body").fadeIn(300);
+	}
+
+	var previousPoint = null;
+	$("#placeholder").bind("plothover", function (event, pos, item) {
+		$("#x").text(pos.x.toFixed(2));
+		$("#y").text(pos.y.toFixed(2));
+
+		if (item) {
+			if (previousPoint != item.dataIndex) {
+				previousPoint = item.dataIndex;
+				
+				$("#gridtip").remove();
+				var x = item.datapoint[0].toFixed(0),
+					y = item.datapoint[1].toFixed(0);
+				
+				showTooltip(item.pageX, item.pageY,
+							"x : " + x + "&nbsp;&nbsp;&nbsp; y : " + y);
+			}
+		}
+		else {
+			$("#gridtip").remove();
+			previousPoint = null;            
+		}
+	});
+});
+</script>
+
+<!-- SCRIPTS: FLOT GRAPH ADVANCE -->
+<script type="text/javascript">
+$(function () {
+	var d1 = [ [0, 1], [1, 14], [2, 5], [3, 4], [4, 5], [5, 1], [6, 14], [7, 5],  [8, 5] ];
+	var d2 = [ [0, 5], [1, 2], [2, 10], [3, 1], [4, 9],  [5, 5], [6, 2], [7, 10], [8, 8] ];
+
+	var plot = $.plot($("#placeholder2"),
+		   [ { data: d1, label: "Data Y"}, { data: d2, label: "Data X" } ], {
+				lines: { 
+					show: true, 
+					fill: true, /*SWITCHED*/
+					lineWidth: 2 
+				},
+				points: { 
+					show: true, 
+					lineWidth: 3
+				},
+				grid: {
+					clickable: true,
+					hoverable: true,
+					autoHighlight: true,
+					mouseActiveRadius: 10,
+					aboveData: true,
+					backgroundColor: "#fafafa",
+					borderWidth: 0,
+					minBorderMargin: 25,
+				},
+				colors: [ "#090", "#099",  "#609", "#900"],
+				shadowSize: 0
+			 });
+
+	function showTooltip(x, y, contents) {
+		$('<div id="gridtip">' + contents + '</div>').css( {
+			position: 'absolute',
+			display: 'none',
+			top: y + 5,
+			left: x + 5
+		}).appendTo("body").fadeIn(300);
+	}
+
+	var previousPoint = null;
+	$("#placeholder2").bind("plothover", function (event, pos, item) {
+		$("#x").text(pos.x.toFixed(2));
+		$("#y").text(pos.y.toFixed(2));
+
+		if (item) {
+			if (previousPoint != item.dataIndex) {
+				previousPoint = item.dataIndex;
+				
+				$("#gridtip").remove();
+				var x = item.datapoint[0].toFixed(0),
+					y = item.datapoint[1].toFixed(0);
+				
+				showTooltip(item.pageX, item.pageY,
+							"x : " + x + "&nbsp;&nbsp;&nbsp; y : " + y);
+			}
+		}
+		else {
+			$("#gridtip").remove();
+			previousPoint = null;            
+		}
+	});
+});
+</script>
+
+<!-- SCRIPTS: CHARTS -->
+<script>
+	// PREDEFINED DATA
+	var data = [
+					{ label: "Series1",  data: [[1,10]]},
+					{ label: "Series2",  data: [[1,30]]},
+					{ label: "Series3",  data: [[1,90]]}
+				];
+
+	// // DEFAULT
+	// $.plot($("#pie-default"), data, 
+	// {
+	// 	series: {
+	// 		pie: {
+	// 			show: true
+	// 		}
+	// 	}
+	// });
+
+	// DEFINE ACTIONS FOR pieHover & pieClick
+	function pieHover(event, pos, obj) 
+	{
+		if (!obj)
+					return;
+		percent = parseFloat(obj.series.percent).toFixed(2);
+		$("#hover").html('<span>'+obj.series.label+' - '+percent+'%</span>');
+	}
+
+	function pieClick(event, pos, obj) 
+	{
+		if (!obj)
+					return;
+		percent = parseFloat(obj.series.percent).toFixed(2);
+		alert(''+obj.series.label+': '+percent+'%');
+	}
+
+	// DONUT
+	$.plot($("#pie-donut"), data, 
+	{
+		series: {
+			pie: { 
+				innerRadius: 50,
+				show: true
+			}
+		}
+	});
+
+	// DONUT + INTERACTIVE
+	$.plot($("#pie-interactive"), data,
+	{
+			series: {
+				pie: {
+					innerRadius: 50,
+					show: true
+				}
+			},
+			grid: {
+				hoverable: true,
+				clickable: true
+			}
+	});
+
+	$("#pie-interactive").bind("plothover", pieHover);
+	$("#pie-interactive").bind("plotclick", pieClick);
+</script>
+</body>

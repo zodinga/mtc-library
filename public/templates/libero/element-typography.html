@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Libero - Flat Admin Interface</title>
+	<!-- BOOTSTRAPS -->
+	<link type="text/css" href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<!-- THEMES -->
+	<link type="text/css" href="css/theme.css" rel="stylesheet">
+	<!--ICONS-->
+	<link type="text/css" href="icons/font-awesome/css/font-awesome.css" rel="stylesheet">
+	<!--FONTS-->
+	<link type='text/css'href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic,500italic,500,300italic,300' rel='stylesheet'>
+	<link type="text/css" href='http://fonts.googleapis.com/css?family=Fugaz+One|Leckerli+One' rel='stylesheet'>
+	<!--JAVASCRIPTS-->
+	<script src="js/jquery-1.9.1.min.js"></script>
+	<script src="js/jquery-ui-1.10.1.custom.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="frame"><div class="sidebar">
+<div class="wrapper">
+
+	<a href="page-profile.html" class="profile">
+		<img src="img/samples/avatar-2.jpg" class="avatar pull-left" width="30" style="margin-right: 15px; border-radius: 4px">
+		Andy Norman
+	</a>
+	<ul class="nav nav-list">
+		<li class="nav-header">Pages</li>
+		<li>
+			<a href="index.html"><i class="icon-dashboard"></i>Dashboard</a>
+		</li>
+		<!-- <li>
+			<a href="activity.html"><i class="icon-bullhorn"></i>Activity</a>
+		</li> -->
+		<li>
+			<a href="page-message.html"><i class="icon-inbox"></i>Message<b class="label">6</b></a>
+		</li>
+		<li>
+			<a href="page-people.html"><i class="icon-group"></i>People</a>
+		</li>
+		<li>
+			<a href="page-calendar.html"><i class="icon-calendar"></i>Calendar</a>
+		</li>
+		<li>
+			<a href="page-gallery.html"><i class="icon-picture"></i>Gallery</a>
+		</li>
+		<li>
+			<a href="page-profile.html"><i class="icon-user"></i>Profile</a>
+		</li>
+
+		<!--SEPARATE-->
+
+		<li class="nav-header">Elements</li>
+		<li class="active" >
+			<a href="element-typography.html"><i class="icon-text-width"></i>Typography</a>
+		</li>
+		<li>
+			<a href="element-layout.html"><i class="icon-desktop"></i>Layout</a>
+		</li>
+		<li>
+			<a href="element-tables.html"><i class="icon-table"></i>Tables</a>
+		</li>
+		<li>
+			<a href="element-form.html"><i class="icon-list-alt"></i>Form</a>
+		</li>
+		<li>
+			<a href="element-buttons.html"><i class="icon-pushpin"></i>Buttons</a>
+		</li>
+		<li>
+			<a href="element-icons.html"><i class="icon-truck"></i>Icons</a>
+		</li>
+		<li>
+			<a href="element-charts.html"><i class="icon-bar-chart"></i>Charts</a>
+		</li>
+
+		<!--SEPARATE-->
+
+		<li class="nav-header">Extra</li>
+		<li>
+			<a href="extra-login.html"><i class="icon-key"></i>Login</a>
+		</li>
+
+		<!--SEPARATE-->
+
+		<li class="nav-header">Bandwidth Transfer</li>
+		<li>
+			<div class="progress progress-danger small">
+				<div class="bar" style="width: 80%;"></div>
+			</div>
+			<div>19419.94 / 12000 MB</div>
+		</li>
+		<li class="nav-header">Disk Space Usage</li>
+		<li>
+			<div class="progress small">
+				<div class="bar" style="width: 20%;"></div>
+			</div>
+			<div>304.44 / 8000 MB</div>
+		</li>
+	</ul>
+</div>
+</div>
+<div class="content">
+
+	<div class="navbar navbar-static-tops">
+	<div class="navbar-inner">		
+		<a href="javascript:void(0);" class="btn pull-left toggle-sidebar hidden-desktop"><i class="icon-reorder"></i></a>
+		<a class="brand" href="index.html">libero</a>
+	</div>
+</div><!--/.navbar -->	
+	<div class="content-head">
+		<ul class="breadcrumb">
+			<li><a href="#">Home</a> <span class="divider"><i class="icon-angle-right"></i></span></li>
+			<li class="active">Typography</li>
+		</ul>
+		<h2>Typography</h2>
+		<div class="muted">
+			Sample description for blank page
+		</div>
+	</div>
+	<div class="content-body">
+		<section class="module no-head">
+			<div class="module-body no-padding">
+				<section class="docs">
+					<h2>Headings</h2>
+					<p>All HTML headings, <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code> are available.</p>
+					<div class="docs-example">
+						<h1>h1. Heading 1</h1>
+						<h2>h2. Heading 2</h2>
+						<h3>h3. Heading 3</h3>
+						<h4>h4. Heading 4</h4>
+						<h5>h5. Heading 5</h5>
+						<h6>h6. Heading 6</h6>
+					</div>
+				</section>
+
+				<section class="docs">
+					<h2>Body copy</h2>
+					<p>This theme's global default <code>font-size</code> is <strong>13px</strong>, <code>font-family</code> is <strong>'Roboto', Arial, sans-serif</strong>, with a <code>line-height</code> of <strong>20px</strong>. This is applied to the <code>&lt;body&gt;</code> and all paragraphs. In addition, <code>&lt;p&gt;</code> (paragraphs) receive a bottom margin of half their line-height (10px by default).</p>
+					<div class="docs-example">
+						<p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
+						<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
+						<p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+					</div>
+				</section>
+
+				<section class="docs">
+					<h2>Lead Body copy</h2>
+					<p>Make a paragraph stand out by adding <code>.lead</code>.</p>
+					<div class="docs-example">
+						<p class="lead">Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
+						<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
+						<p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+					</div>
+				</section>
+
+				<section class="docs">
+					<h2>Emphasis</h2>
+					<p>Make use of HTML's default emphasis tags with lightweight styles. For de-emphasizing inline or blocks of text, use the <code>&lt;small&gt;</code> tag.</p>
+					<div class="docs-example">
+						<p>Standard text size.</p>
+						<p><small>This line of text is meant to be treated as fine print.</small></p>
+<pre class="pre"><span class="tag">&lt;p&gt;</span><span class="pln">
+   </span><span class="tag">&lt;small&gt;</span><span class="pln">This line of text is meant to be treated as fine print.</span><span class="tag">&lt;/small&gt;</span><span class="pln">
+</span><span class="tag">&lt;/p&gt;</span></pre>
+					</div>
+				</section>
+
+				<section class="docs">
+					<h2>Bold</h2>
+					<p>For emphasizing a snippet of text with a heavier font-weight.</p>
+					<div class="docs-example">
+						<p>The following snippet of text is <strong>rendered as bold text</strong>.</p>
+<pre class="pre"><span class="tag">&lt;p&gt;</span><span class="pln">
+   </span>The following snippet of text is <span class="tag">&lt;strong&gt;</span><span class="pln">rendered as bold text</span><span class="tag">&lt;/strong&gt;</span>.<span class="pln">
+</span><span class="tag">&lt;/p&gt;</span></pre>
+					</div>
+				</section>
+
+				<section class="docs">
+					<h2>Italics</h2>
+					<p>For emphasizing a snippet of text with italics.</p>
+					<div class="docs-example">
+						<p>The following snippet of text is <em>rendered as italicized text</em>.</p>
+<pre class="pre"><span class="tag">&lt;p&gt;</span><span class="pln">
+   </span>The following snippet of text is <span class="tag">&lt;em&gt;</span><span class="pln">rendered as italicized text</span><span class="tag">&lt;/em&gt;</span>.<span class="pln">
+</span><span class="tag">&lt;/p&gt;</span></pre>
+					</div>
+				</section>
+
+				<section class="docs">
+					<h2>Emphasis classes</h2>
+					<p>Convey meaning through color with a handful of emphasis utility classes.</p>
+					<div class="docs-example">
+						<p class="muted">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
+						<p class="text-warning">Etiam porta sem malesuada magna mollis euismod.</p>
+						<p class="text-error">Donec ullamcorper nulla non metus auctor fringilla.</p>
+						<p class="text-info">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis.</p>
+						<p class="text-success">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+<pre class="pre"><span class="tag">&lt;p</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"muted"</span><span class="tag">&gt;</span><span class="pln">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</span><span class="tag">&lt;/p&gt;</span>
+   <span class="tag">&lt;p</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"text-warning"</span><span class="tag">&gt;</span><span class="pln">Etiam porta sem malesuada magna mollis euismod.</span><span class="tag">&lt;/p&gt;</span>
+   <span class="tag">&lt;p</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"text-error"</span><span class="tag">&gt;</span><span class="pln">Donec ullamcorper nulla non metus auctor fringilla.</span><span class="tag">&lt;/p&gt;</span>
+   <span class="tag">&lt;p</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"text-info"</span><span class="tag">&gt;</span><span class="pln">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis.</span><span class="tag">&lt;/p&gt;</span>
+<span class="tag">&lt;p</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"text-success"</span><span class="tag">&gt;</span><span class="pln">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</span><span class="tag">&lt;/p&gt;</span></pre>
+					</div>
+				</section>
+
+				<section class="docs">
+					<h2>Blockquotes</h2>
+					<p>For quoting blocks of content from another source within your document.</p>
+					<h3>Default</h3>
+					<p>Wrap <code>&lt;blockquote&gt;</code> around any <abbr title="HyperText Markup Language">HTML</abbr> as the quote. For straight quotes we recommend a <code>&lt;p&gt;</code>.</p>
+					<div class="docs-example">
+						<blockquote>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+						</blockquote>
+<pre class="pre"><span class="tag">&lt;blockquote&gt;</span><span class="pln">
+   </span><span class="tag">&lt;p&gt;</span><span class="pln">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</span><span class="tag">&lt;/p&gt;</span>.<span class="pln">
+</span><span class="tag">&lt;/blockquote&gt;</span></pre>
+					</div>
+
+					<br>
+
+					<h3>Naming a source</h3>
+					<p>Add <code>&lt;small&gt;</code> tag for identifying the source. Wrap the name of the source work in <code>&lt;cite&gt;</code>.</p>
+					<div class="docs-example">
+						<blockquote>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+							<small>Someone famous</small>
+						</blockquote>
+<pre class="pre"><span class="tag">&lt;blockquote&gt;</span><span class="pln">
+   </span><span class="tag">&lt;p&gt;</span><span class="pln">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</span><span class="tag">&lt;/p&gt;</span>.<span class="pln">
+   </span><span class="tag">&lt;small&gt;</span><span class="pln">Someone famous</span><span class="tag">&lt;/small&gt;</span>.<span class="pln">
+</span><span class="tag">&lt;/blockquote&gt;</span></pre>
+					</div>
+				</section>
+
+				<section class="docs">
+					<h2>Lists</h2>
+					<h3>Unordered</h3>
+					<p>A list of items in which the order does <em>not</em> explicitly matter.</p>
+					<div class="docs-example">
+						
+						<ul>
+							<li>Lorem ipsum dolor sit amet</li>
+							<li>Consectetur adipiscing elit</li>
+							<li>Integer molestie lorem at massa</li>
+							<li>Facilisis in pretium nisl aliquet</li>
+							<li>Nulla volutpat aliquam velit
+								<ul>
+									<li>Phasellus iaculis neque</li>
+									<li>Purus sodales ultricies</li>
+									<li>Vestibulum laoreet porttitor sem</li>
+									<li>Ac tristique libero volutpat at</li>
+								</ul>
+							</li>
+							<li>Faucibus porta lacus fringilla vel</li>
+							<li>Aenean sit amet erat nunc</li>
+							<li>Eget porttitor lorem</li>
+						</ul>
+
+<pre class="pre"><span class="tag">&lt;ul&gt;</span>
+   <span class="pln">  </span><span class="tag">&lt;li&gt;</span><span class="pln">...</span><span class="tag">&lt;/li&gt;</span>
+<span class="tag">&lt;/ul&gt;</span></pre>
+						
+					</div>
+
+					<br>
+
+					<h3>Ordered</h3>
+					<p>A list of items in which the order <em>does</em> explicitly matter.</p>
+					<div class="docs-example">
+						
+						<ol>
+							<li>Lorem ipsum dolor sit amet</li>
+							<li>Consectetur adipiscing elit</li>
+							<li>Integer molestie lorem at massa</li>
+							<li>Facilisis in pretium nisl aliquet</li>
+							<li>Faucibus porta lacus fringilla vel</li>
+							<li>Aenean sit amet erat nunc</li>
+							<li>Eget porttitor lorem</li>
+						</ol>
+
+<pre class="pre"><span class="tag">&lt;ol&gt;</span>
+   <span class="pln">  </span><span class="tag">&lt;li&gt;</span><span class="pln">...</span><span class="tag">&lt;/li&gt;</span>
+<span class="tag">&lt;/ol&gt;</span></pre>
+					</div>
+
+					<br>
+
+					<h3>Unstyled</h3>
+					<p>Remove the default <code>list-style</code> and left padding on list items (immediate children only).</p>
+					<div class="docs-example">
+						
+						<ul class="unstyled">
+							<li>Lorem ipsum dolor sit amet</li>
+							<li>Consectetur adipiscing elit</li>
+							<li>Integer molestie lorem at massa</li>
+							<li>Facilisis in pretium nisl aliquet</li>
+							<li>Faucibus porta lacus fringilla vel</li>
+							<li>Aenean sit amet erat nunc</li>
+							<li>Eget porttitor lorem</li>
+						</ul>
+
+<pre class="pre"><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"unstyled"</span><span class="tag">&gt;</span>
+   <span class="tag">&lt;li&gt;</span><span class="pln">...</span><span class="tag">&lt;/li&gt;</span>
+<span class="tag">&lt;/ol&gt;</span></pre>
+					</div>
+
+					<br>
+
+					<h3>Inline</h3>
+					<p>Place all list items on a single line with <code>inline-block</code> and some light padding.</p>
+					<div class="docs-example">
+						
+						<ul class="inline">
+							<li>Lorem ipsum dolor sit amet</li>
+							<li>Consectetur adipiscing elit</li>
+							<li>Integer molestie lorem at massa</li>
+						</ul>
+
+<pre class="pre"><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"inline"</span><span class="tag">&gt;</span>
+   <span class="tag">&lt;li&gt;</span><span class="pln">...</span><span class="tag">&lt;/li&gt;</span>
+<span class="tag">&lt;/ol&gt;</span></pre>
+					</div>
+
+				</section>
+
+				<section class="docs">
+					<h2>Description</h2>
+					<p>A list of terms with their associated descriptions.</p>
+					<div class="docs-example">
+						<dl>
+							<dt>Description lists</dt>
+							<dd>A description list is perfect for defining terms.</dd>
+							<dt>Euismod</dt>
+							<dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+							<dd>Donec id elit non mi porta gravida at eget metus.</dd>
+							<dt>Malesuada porta</dt>
+							<dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+						</dl>
+<pre class="pre"><span class="tag">&lt;dl&gt;</span>
+   <span class="tag">&lt;dt&gt;</span><span class="pln">...</span><span class="tag">&lt;/dt&gt;</span>
+   <span class="tag">&lt;dd&gt;</span><span class="pln">...</span><span class="tag">&lt;/dd&gt;</span>
+<span class="tag">&lt;/dl&gt;</span></pre>
+					</div>
+
+					<br>
+
+					<h3>Horizontal description</h3>
+					<p>A list of terms with their associated descriptions.</p>
+					<div class="docs-example">
+						<dl class="dl-horizontal">
+							<dt>Description lists</dt>
+							<dd>A description list is perfect for defining terms.</dd>
+							<dt>Euismod</dt>
+							<dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+							<dd>Donec id elit non mi porta gravida at eget metus.</dd>
+							<dt>Malesuada porta</dt>
+							<dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+						</dl>
+<pre class="pre"><span class="tag">&lt;dl</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"dl-horizontal"</span><span class="tag">&gt;</span>
+   <span class="tag">&lt;dt&gt;</span><span class="pln">...</span><span class="tag">&lt;/dt&gt;</span>
+   <span class="tag">&lt;dd&gt;</span><span class="pln">...</span><span class="tag">&lt;/dd&gt;</span>
+<span class="tag">&lt;/dl&gt;</span></pre>
+					</div>
+				</section>
+
+				<section class="docs">
+					<h2>Addresses</h2>
+					<p>Present contact information for the nearest ancestor or the entire body of work.</p>
+					<p><code>&lt;address&gt;</code></p>
+					<p>Preserve formatting by ending all lines with <code>&lt;br&gt;</code>.</p>
+					<div class="docs-example">
+						<address>
+							<strong>Twitter, Inc.</strong><br>
+							795 Folsom Ave, Suite 600<br>
+							San Francisco, CA 94107<br>
+							<abbr title="Phone">P:</abbr> (123) 456-7890
+						</address>
+						<address>
+							<strong>Email</strong><br>
+							<a href="mailto:#">first.last@example.com</a>
+						</address>
+						
+<pre class="pre"><span class="tag">&lt;address&gt;</span>
+   <span class="tag">&lt;strong&gt;</span>Twitter, Inc.<span class="tag">&lt;/strong&gt;&lt;br&gt;</span>
+   795 Folsom Ave, Suite 600<span class="tag">&lt;br&gt;</span>
+   San Francisco, CA 94107<span class="tag">&lt;br&gt;</span>
+   <span class="tag">&lt;abbr <span class="atn">title</span><span class="pun">=</span><span class="atv">"Phone"</span>&gt;</span>P:<span class="tag">&lt;/abbr&gt;</span> (123) 456-7890
+<span class="tag">&lt;/address&gt;</span>
+<span class="tag">&lt;address&gt;</span>
+   <span class="tag">&lt;strong&gt;</span>Email<span class="tag">&lt;/strong&gt;&lt;br&gt;</span>
+   <span class="tag">&lt;a <span class="atn">href</span><span class="pun">=</span><span class="atv">"mailto:#"</span>&gt;</span>first.last@example.com<span class="tag">&lt;/a&gt;</span>
+<span class="tag">&lt;/address&gt;</span></pre>
+					</div>
+				</section>
+			</div><!--/.module-body-->
+		</section>
+	</div>
+</div><!--/.content-->
+
+</div><!-- /.frame -->
+
+
+
+<!-- WYSIHTML5 TEXT EDITOR -->
+<script src="js/wysihtml5/advanced.js"></script>
+<script src="js/wysihtml5/wysihtml5-0.3.0.min.js"></script>
+<!-- AUTOSIZE TEXTAREA -->
+<script src='js/autosize/jquery.autosize-min.js'></script>
+<!-- BOOTSTRAP DATEPICKER -->
+<script src="js/bootstrap-datepicker.js"></script>
+<!-- FLOT CHART -->
+<script src="js/flot/jquery.flot.js"></script>
+<script src="js/flot/jquery.flot.pie.js"></script>
+<script src="js/flot/jquery.flot.resize.js"></script>
+<!-- FULLCALENDAR -->
+<script src="js/fullcalendar/fullcalendar.custom.js"></script> -->
+<!-- MIXITUP -->
+<script src="js/mixitup/jquery.mixitup.min.js"></script>
+<!-- THEME -->
+<script src="js/theme.js"></script>
+<!-- SCRIPTS: FLOT GRAPH BASIC -->
+<script type="text/javascript">
+$(function () {
+	var d1 = [ [0, 1], [1, 14], [2, 5], [3, 4], [4, 5], [5, 1], [6, 14], [7, 5],  [8, 5] ];
+	var d2 = [ [0, 5], [1, 2], [2, 10], [3, 1], [4, 9],  [5, 5], [6, 2], [7, 10], [8, 8] ];
+
+	var plot = $.plot($("#placeholder"), 
+	[ { data: d1, label: "Data A" }, { data: d2, label: "Data B" } ], {
+		lines: { 
+			show: true, 
+			fill: false, 
+			lineWidth: 1,
+			lineColor: "#fc0" 
+		},
+		points: { 
+			show: true, 
+			lineWidth: 4 
+		},
+		grid: {
+			clickable: true,
+			hoverable: true,
+			autoHighlight: true,
+			mouseActiveRadius: 10,
+			aboveData: true,
+			backgroundColor: "#fafafa",
+			borderWidth: 0,
+			borderColor: "#fc0",
+			minBorderMargin: 25,
+		},
+		colors: [ "#090", "#099",  "#609", "#900"],
+		shadowSize: 0
+	});
+
+	function showTooltip(x, y, contents) {
+		$('<div id="gridtip">' + contents + '</div>').css( {
+			position: 'absolute',
+			display: 'none',
+			top: y + 5,
+			left: x + 5
+		}).appendTo("body").fadeIn(300);
+	}
+
+	var previousPoint = null;
+	$("#placeholder").bind("plothover", function (event, pos, item) {
+		$("#x").text(pos.x.toFixed(2));
+		$("#y").text(pos.y.toFixed(2));
+
+		if (item) {
+			if (previousPoint != item.dataIndex) {
+				previousPoint = item.dataIndex;
+				
+				$("#gridtip").remove();
+				var x = item.datapoint[0].toFixed(0),
+					y = item.datapoint[1].toFixed(0);
+				
+				showTooltip(item.pageX, item.pageY,
+							"x : " + x + "&nbsp;&nbsp;&nbsp; y : " + y);
+			}
+		}
+		else {
+			$("#gridtip").remove();
+			previousPoint = null;            
+		}
+	});
+});
+</script>
+
+<!-- SCRIPTS: FLOT GRAPH ADVANCE -->
+<script type="text/javascript">
+$(function () {
+	var d1 = [ [0, 1], [1, 14], [2, 5], [3, 4], [4, 5], [5, 1], [6, 14], [7, 5],  [8, 5] ];
+	var d2 = [ [0, 5], [1, 2], [2, 10], [3, 1], [4, 9],  [5, 5], [6, 2], [7, 10], [8, 8] ];
+
+	var plot = $.plot($("#placeholder2"),
+		   [ { data: d1, label: "Data Y"}, { data: d2, label: "Data X" } ], {
+				lines: { 
+					show: true, 
+					fill: true, /*SWITCHED*/
+					lineWidth: 2 
+				},
+				points: { 
+					show: true, 
+					lineWidth: 3
+				},
+				grid: {
+					clickable: true,
+					hoverable: true,
+					autoHighlight: true,
+					mouseActiveRadius: 10,
+					aboveData: true,
+					backgroundColor: "#fafafa",
+					borderWidth: 0,
+					minBorderMargin: 25,
+				},
+				colors: [ "#090", "#099",  "#609", "#900"],
+				shadowSize: 0
+			 });
+
+	function showTooltip(x, y, contents) {
+		$('<div id="gridtip">' + contents + '</div>').css( {
+			position: 'absolute',
+			display: 'none',
+			top: y + 5,
+			left: x + 5
+		}).appendTo("body").fadeIn(300);
+	}
+
+	var previousPoint = null;
+	$("#placeholder2").bind("plothover", function (event, pos, item) {
+		$("#x").text(pos.x.toFixed(2));
+		$("#y").text(pos.y.toFixed(2));
+
+		if (item) {
+			if (previousPoint != item.dataIndex) {
+				previousPoint = item.dataIndex;
+				
+				$("#gridtip").remove();
+				var x = item.datapoint[0].toFixed(0),
+					y = item.datapoint[1].toFixed(0);
+				
+				showTooltip(item.pageX, item.pageY,
+							"x : " + x + "&nbsp;&nbsp;&nbsp; y : " + y);
+			}
+		}
+		else {
+			$("#gridtip").remove();
+			previousPoint = null;            
+		}
+	});
+});
+</script>
+
+<!-- SCRIPTS: CHARTS -->
+<script>
+	// PREDEFINED DATA
+	var data = [
+					{ label: "Series1",  data: [[1,10]]},
+					{ label: "Series2",  data: [[1,30]]},
+					{ label: "Series3",  data: [[1,90]]}
+				];
+
+	// // DEFAULT
+	// $.plot($("#pie-default"), data, 
+	// {
+	// 	series: {
+	// 		pie: {
+	// 			show: true
+	// 		}
+	// 	}
+	// });
+
+	// DEFINE ACTIONS FOR pieHover & pieClick
+	function pieHover(event, pos, obj) 
+	{
+		if (!obj)
+					return;
+		percent = parseFloat(obj.series.percent).toFixed(2);
+		$("#hover").html('<span>'+obj.series.label+' - '+percent+'%</span>');
+	}
+
+	function pieClick(event, pos, obj) 
+	{
+		if (!obj)
+					return;
+		percent = parseFloat(obj.series.percent).toFixed(2);
+		alert(''+obj.series.label+': '+percent+'%');
+	}
+
+	// DONUT
+	$.plot($("#pie-donut"), data, 
+	{
+		series: {
+			pie: { 
+				innerRadius: 50,
+				show: true
+			}
+		}
+	});
+
+	// DONUT + INTERACTIVE
+	$.plot($("#pie-interactive"), data,
+	{
+			series: {
+				pie: {
+					innerRadius: 50,
+					show: true
+				}
+			},
+			grid: {
+				hoverable: true,
+				clickable: true
+			}
+	});
+
+	$("#pie-interactive").bind("plothover", pieHover);
+	$("#pie-interactive").bind("plotclick", pieClick);
+</script>
+</body>
