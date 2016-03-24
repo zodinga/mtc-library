@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Libero - Flat Admin Interface</title>
+	<!-- BOOTSTRAPS -->
+	<link type="text/css" href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<!-- THEMES -->
+	<link type="text/css" href="css/theme.css" rel="stylesheet">
+	<!--ICONS-->
+	<link type="text/css" href="icons/font-awesome/css/font-awesome.css" rel="stylesheet">
+	<!--FONTS-->
+	<link type='text/css'href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic,500italic,500,300italic,300' rel='stylesheet'>
+	<link type="text/css" href='http://fonts.googleapis.com/css?family=Fugaz+One|Leckerli+One' rel='stylesheet'>
+	<!--JAVASCRIPTS-->
+	<script src="js/jquery-1.9.1.min.js"></script>
+	<script src="js/jquery-ui-1.10.1.custom.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="frame"><div class="sidebar">
+<div class="wrapper">
+
+	<a href="page-profile.html" class="profile">
+		<img src="img/samples/avatar-2.jpg" class="avatar pull-left" width="30" style="margin-right: 15px; border-radius: 4px">
+		Andy Norman
+	</a>
+	<ul class="nav nav-list">
+		<li class="nav-header">Pages</li>
+		<li>
+			<a href="index.html"><i class="icon-dashboard"></i>Dashboard</a>
+		</li>
+		<!-- <li>
+			<a href="activity.html"><i class="icon-bullhorn"></i>Activity</a>
+		</li> -->
+		<li>
+			<a href="page-message.html"><i class="icon-inbox"></i>Message<b class="label">6</b></a>
+		</li>
+		<li>
+			<a href="page-people.html"><i class="icon-group"></i>People</a>
+		</li>
+		<li>
+			<a href="page-calendar.html"><i class="icon-calendar"></i>Calendar</a>
+		</li>
+		<li>
+			<a href="page-gallery.html"><i class="icon-picture"></i>Gallery</a>
+		</li>
+		<li>
+			<a href="page-profile.html"><i class="icon-user"></i>Profile</a>
+		</li>
+
+		<!--SEPARATE-->
+
+		<li class="nav-header">Elements</li>
+		<li>
+			<a href="element-typography.html"><i class="icon-text-width"></i>Typography</a>
+		</li>
+		<li>
+			<a href="element-layout.html"><i class="icon-desktop"></i>Layout</a>
+		</li>
+		<li>
+			<a href="element-tables.html"><i class="icon-table"></i>Tables</a>
+		</li>
+		<li class="active" >
+			<a href="element-form.html"><i class="icon-list-alt"></i>Form</a>
+		</li>
+		<li>
+			<a href="element-buttons.html"><i class="icon-pushpin"></i>Buttons</a>
+		</li>
+		<li>
+			<a href="element-icons.html"><i class="icon-truck"></i>Icons</a>
+		</li>
+		<li>
+			<a href="element-charts.html"><i class="icon-bar-chart"></i>Charts</a>
+		</li>
+
+		<!--SEPARATE-->
+
+		<li class="nav-header">Extra</li>
+		<li>
+			<a href="extra-login.html"><i class="icon-key"></i>Login</a>
+		</li>
+
+		<!--SEPARATE-->
+
+		<li class="nav-header">Bandwidth Transfer</li>
+		<li>
+			<div class="progress progress-danger small">
+				<div class="bar" style="width: 80%;"></div>
+			</div>
+			<div>19419.94 / 12000 MB</div>
+		</li>
+		<li class="nav-header">Disk Space Usage</li>
+		<li>
+			<div class="progress small">
+				<div class="bar" style="width: 20%;"></div>
+			</div>
+			<div>304.44 / 8000 MB</div>
+		</li>
+	</ul>
+</div>
+</div>
+<div class="content">
+
+	<div class="navbar navbar-static-tops">
+	<div class="navbar-inner">		
+		<a href="javascript:void(0);" class="btn pull-left toggle-sidebar hidden-desktop"><i class="icon-reorder"></i></a>
+		<a class="brand" href="index.html">libero</a>
+	</div>
+</div><!--/.navbar -->	
+	<div class="content-head">
+		<ul class="breadcrumb">
+			<li><a href="#">Home</a> <span class="divider"><i class="icon-angle-right"></i></span></li>
+			<li class="active">Form</li>
+		</ul>
+		<h2>Form</h2>
+		<div class="muted">
+			Sample description for blank page
+		</div>
+	</div>
+	<div class="content-body">
+		<section class="module">
+			<div class="module-head">
+				<ul class="module-control pull-left">
+					<li class="active"><a href="#tab-1" data-toggle="tab">Form Horizontal</a></li>
+					<li><a href="#tab-2" data-toggle="tab">Form Vertical</a></li>
+				</ul>
+			</div><!--/.module-head-->
+			<div class="module-body">
+				<div class="tab">
+					<div class="tab-content">
+						<div class="tab-pane fade active in" id="tab-1">
+							<form class="form-horizontal">
+								<div class="control-group">
+									<label class="control-label" for="basicinput">Basic Input</label>
+									<div class="controls">
+										<input type="text" id="basicinput" placeholder="Type something here..." class="span8">
+										<span class="help-inline">Helpful text here.</span>
+									</div>
+								</div>
+
+								<div class="control-group">
+									<label class="control-label" for="basicinput">Disabled Input</label>
+									<div class="controls">
+										<input type="text" id="basicinput" placeholder="You can't type something here..." class="span8" disabled="">
+									</div>
+								</div>
+
+								<div class="control-group">
+									<label class="control-label" for="basicinput">Tooltip Input</label>
+									<div class="controls">
+										<input data-title="A tooltip for the input" type="text" placeholder="Hover to view the tooltip…" data-original-title="" class="span8 tip">
+									</div>
+								</div>
+
+								<div class="control-group">
+									<label class="control-label" for="basicinput">Prepended Input</label>
+									<div class="controls">
+										<div class="input-prepend">
+											<span class="add-on">#</span><input class="span8" type="text" placeholder="prepend">       
+										</div>
+									</div>
+								</div>
+
+								<div class="control-group">
+									<label class="control-label" for="basicinput">Appended Input</label>
+									<div class="controls">
+										<div class="input-append">
+											<input type="text" placeholder="5.000" class="span8"><span class="add-on">$</span>
+										</div>
+									</div>
+								</div>
+
+								<div class="control-group">
+									<label class="control-label" for="basicinput">Dropdown Button</label>
+									<div class="controls">
+										<div class="dropdown">
+											<a class="dropdown-toggle btn" data-toggle="dropdown" href="#">Dropdown Button <i class="icon-caret-down"></i></a>
+											<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+												<li><a href="#">First Row</a></li>
+												<li><a href="#">Second Row</a></li>
+												<li><a href="#">Third Row</a></li>
+												<li><a href="#">Fourth Row</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="control-group">
+									<label class="control-label" for="basicinput">Dropdown</label>
+									<div class="controls">
+										<select tabindex="1" data-placeholder="Select here.." class="span8">
+											<option value="">Select here..</option>
+											<option value="Category 1">First Row</option>
+											<option value="Category 2">Second Row</option>
+											<option value="Category 3">Third Row</option>
+											<option value="Category 4">Fourth Row</option>
+										</select>
+									</div>
+								</div>
+
+								<div class="control-group">
+									<label class="control-label">Radiobuttons</label>
+									<div class="controls">
+										<label class="radio">
+											<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+											Option one
+										</label> 
+										<label class="radio">
+											<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+											Option two
+										</label> 
+										<label class="radio">
+											<input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+											Option three
+										</label>
+									</div>
+								</div>
+
+								<div class="control-group">
+									<label class="control-label">Inline Radiobuttons</label>
+									<div class="controls">
+										<label class="radio inline">
+											<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+											Option one
+										</label> 
+										<label class="radio inline">
+											<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+											Option two
+										</label> 
+										<label class="radio inline">
+											<input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+											Option three
+										</label>
+									</div>
+								</div>
+
+								<div class="control-group">
+									<label class="control-label">Checkboxes</label>
+									<div class="controls">
+										<label class="checkbox">
+											<input type="checkbox" value="">
+											Option one
+										</label>
+										<label class="checkbox">
+											<input type="checkbox" value="">
+											Option two
+										</label>
+										<label class="checkbox">
+											<input type="checkbox" value="">
+											Option three
+										</label>
+									</div>
+								</div>
+
+								<div class="control-group">
+									<label class="control-label">Inline Checkboxes</label>
+									<div class="controls">
+										<label class="checkbox inline">
+											<input type="checkbox" value="">
+											Option one
+										</label>
+										<label class="checkbox inline">
+											<input type="checkbox" value="">
+											Option two
+										</label>
+										<label class="checkbox inline">
+											<input type="checkbox" value="">
+											Option three
+										</label>
+									</div>
+								</div>
+
+								<div class="control-group">
+									<label class="control-label" for="basicinput">Textarea</label>
+									<div class="controls">
+										<textarea class="span8" rows="5"></textarea>
+									</div>
+								</div>
+
+								<div class="control-group">
+									<div class="controls">
+										<button type="submit" class="btn btn-primary">Submit Form</button>
+										<button type="reset" class="btn">Reset Form</button>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="tab-pane fade" id="tab-2">
+							<form class="form-vertical">
+								<div class="control-group">
+									<label class="control-label" for="basicinput">Basic Input</label>
+									<div class="controls">
+										<input type="text" id="basicinput" placeholder="Type something here..." class="span8">
+										<span class="help-inline">Helpful text here.</span>
+									</div>
+								</div>
+
+								<div class="control-group">
+									<label class="control-label" for="basicinput">Disabled Input</label>
+									<div class="controls">
+										<input type="text" id="basicinput" placeholder="You can't type something here..." class="span8" disabled="">
+									</div>
+								</div>
+
+								<div class="control-group">
+									<label class="control-label" for="basicinput">Tooltip Input</label>
+									<div class="controls">
+										<input data-title="A tooltip for the input" type="text" placeholder="Hover to view the tooltip…" data-original-title="" class="span8 tip">
+									</div>
+								</div>
+
+								<div class="control-group">
+									<label class="control-label" for="basicinput">Prepended Input</label>
+									<div class="controls">
+										<div class="input-prepend">
+											<span class="add-on">#</span><input class="span8" type="text" placeholder="prepend">       
+										</div>
+									</div>
+								</div>
+
+								<div class="control-group">
+									<label class="control-label" for="basicinput">Appended Input</label>
+									<div class="controls">
+										<div class="input-append">
+											<input type="text" placeholder="5.000" class="span8"><span class="add-on">$</span>
+										</div>
+									</div>
+								</div>
+
+								<div class="control-group">
+									<label class="control-label" for="basicinput">Dropdown Button</label>
+									<div class="controls">
+										<div class="dropdown">
+											<a class="dropdown-toggle btn" data-toggle="dropdown" href="#">Dropdown Button <i class="icon-caret-down"></i></a>
+											<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+												<li><a href="#">First Row</a></li>
+												<li><a href="#">Second Row</a></li>
+												<li><a href="#">Third Row</a></li>
+												<li><a href="#">Fourth Row</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="control-group">
+									<label class="control-label" for="basicinput">Dropdown</label>
+									<div class="controls">
+										<select tabindex="1" data-placeholder="Select here.." class="span8">
+											<option value="">Select here..</option>
+											<option value="Category 1">First Row</option>
+											<option value="Category 2">Second Row</option>
+											<option value="Category 3">Third Row</option>
+											<option value="Category 4">Fourth Row</option>
+										</select>
+									</div>
+								</div>
+
+								<div class="control-group">
+									<label class="control-label">Radiobuttons</label>
+									<div class="controls">
+										<label class="radio">
+											<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+											Option one
+										</label> 
+										<label class="radio">
+											<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+											Option two
+										</label> 
+										<label class="radio">
+											<input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+											Option three
+										</label>
+									</div>
+								</div>
+
+								<div class="control-group">
+									<label class="control-label">Inline Radiobuttons</label>
+									<div class="controls">
+										<label class="radio inline">
+											<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+											Option one
+										</label> 
+										<label class="radio inline">
+											<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+											Option two
+										</label> 
+										<label class="radio inline">
+											<input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+											Option three
+										</label>
+									</div>
+								</div>
+
+								<div class="control-group">
+									<label class="control-label">Checkboxes</label>
+									<div class="controls">
+										<label class="checkbox">
+											<input type="checkbox" value="">
+											Option one
+										</label>
+										<label class="checkbox">
+											<input type="checkbox" value="">
+											Option two
+										</label>
+										<label class="checkbox">
+											<input type="checkbox" value="">
+											Option three
+										</label>
+									</div>
+								</div>
+
+								<div class="control-group">
+									<label class="control-label">Inline Checkboxes</label>
+									<div class="controls">
+										<label class="checkbox inline">
+											<input type="checkbox" value="">
+											Option one
+										</label>
+										<label class="checkbox inline">
+											<input type="checkbox" value="">
+											Option two
+										</label>
+										<label class="checkbox inline">
+											<input type="checkbox" value="">
+											Option three
+										</label>
+									</div>
+								</div>
+
+								<div class="control-group">
+									<label class="control-label" for="basicinput">Textarea</label>
+									<div class="controls">
+										<textarea class="span8" rows="5"></textarea>
+									</div>
+								</div>
+
+								<div class="control-group">
+									<div class="controls">
+										<button type="submit" class="btn btn-primary">Submit Form</button>
+										<button type="reset" class="btn">Reset Form</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div><!--/.module-body-->
+		</section>
+
+		<section class="module">
+			<div class="module-head">
+				<b>Input Sizes & States</b>
+			</div><!--/.module-head-->
+			<div class="module-body">
+				<form class="form-horizontal">
+					<div class="control-group">
+						<label class="control-label">Block Level Input</label>
+						<div class="controls">
+							<input type="text" class="input-block-level" placeholder=".input-block-level">
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label">Relative sizing</label>
+						<div class="controls">
+							<p><input class="input-mini" type="text" placeholder=".input-mini"></p>
+							<p><input class="input-small" type="text" placeholder=".input-small"></p>
+							<p><input class="input-medium" type="text" placeholder=".input-medium"></p>
+							<p><input class="input-large" type="text" placeholder=".input-large"></p>
+							<p><input class="input-xlarge" type="text" placeholder=".input-xlarge"></p>
+							<input class="input-xxlarge" type="text" placeholder=".input-xxlarge">
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label">Grid sizing</label>
+						<div class="controls">
+							<p><input class="span1" type="text" placeholder=".span1"></p>
+							<p><input class="span2" type="text" placeholder=".span2"></p>
+							<p><input class="span3" type="text" placeholder=".span3"></p>
+							<p>
+								<select class="span1">
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+								</select>
+							</p>
+							<p>
+								<select class="span2">
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+								</select>
+							</p>
+							<select class="span3">
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+							</select>
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label"></label>
+						<div class="controls">
+							For multiple grid inputs per line, <strong>use the <code>.controls-row</code> modifier class for proper spacing</strong>. It floats the inputs to collapse white-space, sets the proper margins, and clears the float.
+						</div>
+					</div>
+					<div class="control-group">
+						<p class="controls">
+							<input class="span5" type="text" placeholder=".span5">
+						</p>
+						<p class="controls controls-row">
+							<input class="span4" type="text" placeholder=".span4">
+							<input class="span1" type="text" placeholder=".span1">
+						</p>
+						<p class="controls controls-row">
+							<input class="span3" type="text" placeholder=".span3">
+							<input class="span2" type="text" placeholder=".span2">
+						</p>
+						<p class="controls controls-row">
+							<input class="span2" type="text" placeholder=".span2">
+							<input class="span3" type="text" placeholder=".span3">
+						</p>
+						<div class="controls controls-row">
+							<input class="span1" type="text" placeholder=".span1">
+							<input class="span4" type="text" placeholder=".span4">
+						</div>
+					</div>
+
+					<div class="control-group error">
+						<label class="control-label">Error state</label>
+						<div class="controls">
+						<input type="text" class="error">
+						<span class="help-inline"><code>class="error"</code></span>
+						</div>
+					</div>
+
+					<div class="control-group warning">
+						<label class="control-label">Warning state</label>
+						<div class="controls">
+						<input type="text" class="warning">
+						<span class="help-inline"><code>class="warning"</code></span>
+						</div>
+					</div>
+					<div class="control-group success">
+						<label class="control-label">Success state</label>
+						<div class="controls">
+						<input type="text" class="success">
+						<span class="help-inline"><code>class="success"</code></span>
+						</div>
+					</div>
+					<div class="control-group info">
+						<label class="control-label">Info state</label>
+						<div class="controls">
+						<input type="text" class="info">
+						<span class="help-inline"><code>class="info"</code></span>
+						</div>
+					</div>
+					<div class="control-group disabled">
+						<label class="control-label">Disabled state</label>
+						<div class="controls">
+						<input type="text" disabled="disabled">
+						<span class="help-inline"><code>input disabled="disabled"</code></span>
+						</div>
+					</div>
+				</form>
+			</div><!--/.module-body-->
+		</section>
+
+		<section class="module">
+			<div class="module-head">
+				<b>Editor & Alerts</b>
+			</div><!--/.module-head-->
+			<div class="module-body">
+				<div class="alert">
+				  <a href="#" class="close" data-dismiss="alert"><i class="icon-remove"></i></a>
+				  <strong>Warning!</strong> Best check yo self, you're not looking too good.
+				</div>
+				<div class="alert alert-error">
+				  <a href="#" class="close" data-dismiss="alert"><i class="icon-remove"></i></a>
+				  <strong>Oh snap!</strong> Change a few things up and try submitting again.
+				</div>
+				<div class="alert alert-success">
+				  <a href="#" class="close" data-dismiss="alert"><i class="icon-remove"></i></a>
+				  <strong>Well done!</strong> You successfully read this important alert message.
+				</div>
+
+				<div class="alert alert-info">
+				  <a href="#" class="close" data-dismiss="alert"><i class="icon-remove"></i></a>
+				  <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+				</div>
+
+				<hr>
+				
+				<form>
+					<div id="toolbar" style="display: none;">
+						<p>
+							<span class="btn-toolbar" data-toggle="buttons-checkbox">
+								<span class=" btn-group">
+									<a class="btn" data-wysihtml5-command="bold" title="CTRL+B"><i class="icon-bold"></i></a>
+									<a class="btn" data-wysihtml5-command="italic" title="CTRL+I"><i class="icon-italic"></i></a>
+								</span>
+								<span class=" btn-group">
+									<a class="btn" data-wysihtml5-command="createLink"><i class="icon-link"></i></a>
+									<a class="btn" data-wysihtml5-command="insertImage"><i class="icon-picture"></i></a>
+								</span>
+								<span class=" btn-group">
+									<a class="btn" data-wysihtml5-command="insertUnorderedList"><i class="icon-list-ul"></i></a>
+									<a class="btn" data-wysihtml5-command="insertOrderedList"><i class="icon-list-ol"></i></a>
+								</span>
+								<span class="btn-group">
+									<a class="btn" data-wysihtml5-action="change_view">switch to html view</a>
+								</span>
+							</span>
+						</p>								    
+						<p data-wysihtml5-dialog="createLink" style="display: none;">
+							<label>
+								Link:
+								<input type="text" data-wysihtml5-dialog-field="href" value="http://">
+							</label>
+							<a data-wysihtml5-dialog-action="save">OK</a>&nbsp;<a data-wysihtml5-dialog-action="cancel">Cancel</a>
+						</p>
+				    
+						<p data-wysihtml5-dialog="insertImage" style="display: none;">
+							<label>
+								Image:
+								<input type="text" data-wysihtml5-dialog-field="src" value="http://">
+							</label>
+							<label>
+								Align:
+								<select data-wysihtml5-dialog-field="className">
+									<option value="">default</option>
+									<option value="wysiwyg-float-left">left</option>
+									<option value="wysiwyg-float-right">right</option>
+								</select>
+							</label>
+							<a data-wysihtml5-dialog-action="save">OK</a>&nbsp;<a data-wysihtml5-dialog-action="cancel">Cancel</a>
+						</p>
+					</div>
+					
+					<p><textarea id="textarea" class="input-block-level" rows="10"  placeholder="Start typing here now ..."></textarea></p>
+					
+					<button class="btn btn-primary">Send Message</button>
+					<input class="btn" type="reset" value="Reset">
+				</form>
+			</div><!--/.module-body-->
+		</section><!--/.module-->
+
+
+		<section class="module">
+			<div class="module-head">
+				<b>Datepicker</b>
+			</div><!--/.module-head-->
+			<div class="module-body">
+				<form class="form-horizontal">
+					<div class="control-group">
+						<label class="control-label" for="basicinput">Basic Datepicker</label>
+						<div class="controls">
+							<input type="text" class="span2" value="02-16-2012" id="dp1">
+							<span class="help-block muted">Attached to a field with the format specified via options.</span>
+						</div>
+					</div>
+
+					<div class="control-group">
+						<label class="control-label" for="basicinput">With specified format</label>
+						<div class="controls">
+							<input type="text" class="span2" value="02/16/12" data-date-format="mm/dd/yy" id="dp2">
+							<span class="help-block muted">Attached to a field with the format specified via data tag.</span>
+						</div>
+					</div>
+
+					<div class="control-group">
+						<label class="control-label" for="basicinput">Basic Input</label>
+						<div class="controls">
+							<div class="input-append date" id="dp3" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
+								<input class="span2" size="16" type="text" value="12-02-2012" readonly="">
+								<span class="add-on"><i class="icon-calendar"></i></span>
+							</div>
+							<span class="help-block muted">As a component.</span>
+						</div>
+					</div>
+
+					<div class="control-group">
+						<label class="control-label" for="basicinput">Basic Input</label>
+						<div class="controls">
+							<div>
+								Start date
+								<a href="javascript:void(0);" class="btn small" id="dp4" data-date-format="yyyy-mm-dd" data-date="2012-02-20">Change</a>
+								<b id="startDate">2012-02-20</b>
+							</div>
+							<div>
+								End date
+								<a href="javascript:void(0);" class="btn small" id="dp5" data-date-format="yyyy-mm-dd" data-date="2012-02-25">Change</a>
+								<b id="endDate">2012-02-25</b>
+							</div>
+						</div>
+					</div>
+
+					<div class="control-group">
+						<label class="control-label" for="basicinput">Inline Datepicker</label>
+						<div class="controls">
+							<div id="dp6" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
+							</div>
+						</div>
+					</div>
+				</form>
+			</div><!--/.module-body-->
+		</section><!--/.module-->
+	</div>
+</div><!--/.content-->
+
+</div><!-- /.frame -->
+
+
+
+<!-- WYSIHTML5 TEXT EDITOR -->
+<script src="js/wysihtml5/advanced.js"></script>
+<script src="js/wysihtml5/wysihtml5-0.3.0.min.js"></script>
+<!-- AUTOSIZE TEXTAREA -->
+<script src='js/autosize/jquery.autosize-min.js'></script>
+<!-- BOOTSTRAP DATEPICKER -->
+<script src="js/bootstrap-datepicker.js"></script>
+<!-- FLOT CHART -->
+<script src="js/flot/jquery.flot.js"></script>
+<script src="js/flot/jquery.flot.pie.js"></script>
+<script src="js/flot/jquery.flot.resize.js"></script>
+<!-- FULLCALENDAR -->
+<script src="js/fullcalendar/fullcalendar.custom.js"></script> -->
+<!-- MIXITUP -->
+<script src="js/mixitup/jquery.mixitup.min.js"></script>
+<!-- THEME -->
+<script src="js/theme.js"></script>
+<!-- SCRIPTS: FLOT GRAPH BASIC -->
+<script type="text/javascript">
+$(function () {
+	var d1 = [ [0, 1], [1, 14], [2, 5], [3, 4], [4, 5], [5, 1], [6, 14], [7, 5],  [8, 5] ];
+	var d2 = [ [0, 5], [1, 2], [2, 10], [3, 1], [4, 9],  [5, 5], [6, 2], [7, 10], [8, 8] ];
+
+	var plot = $.plot($("#placeholder"), 
+	[ { data: d1, label: "Data A" }, { data: d2, label: "Data B" } ], {
+		lines: { 
+			show: true, 
+			fill: false, 
+			lineWidth: 1,
+			lineColor: "#fc0" 
+		},
+		points: { 
+			show: true, 
+			lineWidth: 4 
+		},
+		grid: {
+			clickable: true,
+			hoverable: true,
+			autoHighlight: true,
+			mouseActiveRadius: 10,
+			aboveData: true,
+			backgroundColor: "#fafafa",
+			borderWidth: 0,
+			borderColor: "#fc0",
+			minBorderMargin: 25,
+		},
+		colors: [ "#090", "#099",  "#609", "#900"],
+		shadowSize: 0
+	});
+
+	function showTooltip(x, y, contents) {
+		$('<div id="gridtip">' + contents + '</div>').css( {
+			position: 'absolute',
+			display: 'none',
+			top: y + 5,
+			left: x + 5
+		}).appendTo("body").fadeIn(300);
+	}
+
+	var previousPoint = null;
+	$("#placeholder").bind("plothover", function (event, pos, item) {
+		$("#x").text(pos.x.toFixed(2));
+		$("#y").text(pos.y.toFixed(2));
+
+		if (item) {
+			if (previousPoint != item.dataIndex) {
+				previousPoint = item.dataIndex;
+				
+				$("#gridtip").remove();
+				var x = item.datapoint[0].toFixed(0),
+					y = item.datapoint[1].toFixed(0);
+				
+				showTooltip(item.pageX, item.pageY,
+							"x : " + x + "&nbsp;&nbsp;&nbsp; y : " + y);
+			}
+		}
+		else {
+			$("#gridtip").remove();
+			previousPoint = null;            
+		}
+	});
+});
+</script>
+
+<!-- SCRIPTS: FLOT GRAPH ADVANCE -->
+<script type="text/javascript">
+$(function () {
+	var d1 = [ [0, 1], [1, 14], [2, 5], [3, 4], [4, 5], [5, 1], [6, 14], [7, 5],  [8, 5] ];
+	var d2 = [ [0, 5], [1, 2], [2, 10], [3, 1], [4, 9],  [5, 5], [6, 2], [7, 10], [8, 8] ];
+
+	var plot = $.plot($("#placeholder2"),
+		   [ { data: d1, label: "Data Y"}, { data: d2, label: "Data X" } ], {
+				lines: { 
+					show: true, 
+					fill: true, /*SWITCHED*/
+					lineWidth: 2 
+				},
+				points: { 
+					show: true, 
+					lineWidth: 3
+				},
+				grid: {
+					clickable: true,
+					hoverable: true,
+					autoHighlight: true,
+					mouseActiveRadius: 10,
+					aboveData: true,
+					backgroundColor: "#fafafa",
+					borderWidth: 0,
+					minBorderMargin: 25,
+				},
+				colors: [ "#090", "#099",  "#609", "#900"],
+				shadowSize: 0
+			 });
+
+	function showTooltip(x, y, contents) {
+		$('<div id="gridtip">' + contents + '</div>').css( {
+			position: 'absolute',
+			display: 'none',
+			top: y + 5,
+			left: x + 5
+		}).appendTo("body").fadeIn(300);
+	}
+
+	var previousPoint = null;
+	$("#placeholder2").bind("plothover", function (event, pos, item) {
+		$("#x").text(pos.x.toFixed(2));
+		$("#y").text(pos.y.toFixed(2));
+
+		if (item) {
+			if (previousPoint != item.dataIndex) {
+				previousPoint = item.dataIndex;
+				
+				$("#gridtip").remove();
+				var x = item.datapoint[0].toFixed(0),
+					y = item.datapoint[1].toFixed(0);
+				
+				showTooltip(item.pageX, item.pageY,
+							"x : " + x + "&nbsp;&nbsp;&nbsp; y : " + y);
+			}
+		}
+		else {
+			$("#gridtip").remove();
+			previousPoint = null;            
+		}
+	});
+});
+</script>
+
+<!-- SCRIPTS: CHARTS -->
+<script>
+	// PREDEFINED DATA
+	var data = [
+					{ label: "Series1",  data: [[1,10]]},
+					{ label: "Series2",  data: [[1,30]]},
+					{ label: "Series3",  data: [[1,90]]}
+				];
+
+	// // DEFAULT
+	// $.plot($("#pie-default"), data, 
+	// {
+	// 	series: {
+	// 		pie: {
+	// 			show: true
+	// 		}
+	// 	}
+	// });
+
+	// DEFINE ACTIONS FOR pieHover & pieClick
+	function pieHover(event, pos, obj) 
+	{
+		if (!obj)
+					return;
+		percent = parseFloat(obj.series.percent).toFixed(2);
+		$("#hover").html('<span>'+obj.series.label+' - '+percent+'%</span>');
+	}
+
+	function pieClick(event, pos, obj) 
+	{
+		if (!obj)
+					return;
+		percent = parseFloat(obj.series.percent).toFixed(2);
+		alert(''+obj.series.label+': '+percent+'%');
+	}
+
+	// DONUT
+	$.plot($("#pie-donut"), data, 
+	{
+		series: {
+			pie: { 
+				innerRadius: 50,
+				show: true
+			}
+		}
+	});
+
+	// DONUT + INTERACTIVE
+	$.plot($("#pie-interactive"), data,
+	{
+			series: {
+				pie: {
+					innerRadius: 50,
+					show: true
+				}
+			},
+			grid: {
+				hoverable: true,
+				clickable: true
+			}
+	});
+
+	$("#pie-interactive").bind("plothover", pieHover);
+	$("#pie-interactive").bind("plotclick", pieClick);
+</script>
+</body>

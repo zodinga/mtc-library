@@ -1,0 +1,156 @@
+.form-horizontal {
+	padding: 20px 0;
+	.form-control-static {
+		padding-top: 11px;
+	}
+}
+
+.form-inline {
+	.form-group {
+		margin-right: 10px;
+	}
+}
+
+.control-label {
+	padding-top: 11px;
+}
+
+.form-control {
+	background-color: @input-background-color;
+	border-width: @input-border-width;
+	padding: 5px 12px;
+	.border-radius(3px);
+	.box-shadow(0 1px 2px 0 rgba(0, 0, 0, 0.1));
+
+	&:focus {
+		border-color: @gray-light;
+		.box-shadow(0 1px 3px 0 rgba(0, 0, 0, 0.15));
+	}
+
+	&.input-lg {
+		padding: 15px 12px;
+	}
+
+	&.input-sm {
+		padding: 15px 12px;
+	}
+}
+
+textarea.form-control {
+	padding: 10px 12px;
+}
+
+fieldset {
+	border: solid 1px @gray-light;
+	padding: 20px;
+	.border-radius(4px);
+	.box-shadow(0 1px 2px 0 rgba(0, 0, 0, 0.1));
+
+	legend {
+		border: 0;
+		padding: 0 20px;
+		width: auto;
+	}
+}
+
+.radio-inline label, .checkbox-inline label {
+	font-weight: normal;
+}
+
+.bootstrap-select {
+	.btn {
+		background-color: @input-background-color;
+		border: solid @input-border-width @input-border-color;
+		padding: 7px 12px;
+		.form-control;
+		&:focus {
+			outline: none !important;
+		}
+	}
+}
+
+.input-group {
+	.box-shadow(0 1px 2px 0 rgba(0, 0, 0, 0.1));
+
+	.form-control {
+		.box-shadow(0 0 0 0 rgba(0, 0, 0, 0));
+	}
+
+	.input-group-addon {
+		.border-radius(0);
+	}
+}
+
+.input-group-btn {
+	.btn {
+		border: solid @input-border-width @input-border-color;
+		padding: 6px 12px;
+	}
+}
+
+// bootstrap-switch 
+.has-switch {
+	.border-radius(3px);
+
+	span.switch-primary,
+	span.switch-left {
+		background: @brand-primary;
+	}
+
+	span.switch-left {
+		.border-radius(3px 0 0 3px);
+
+		&.switch-primary {
+			background: @brand-primary;
+		}
+
+		&.switch-success {
+			background: @brand-success;
+		}
+
+		&.switch-info {
+			background: @brand-info;
+		}
+
+		&.switch-warning {
+			background: @brand-warning;
+		}
+
+		&.switch-danger {
+			background: @brand-danger;
+		}
+
+		&.switch-inverse {
+			background: @brand-inverse;
+		}
+	}
+
+	span.switch-right {
+		background: @brand-default;	
+		.border-radius(0 3px 3px 0);
+
+		&.switch-primary {
+			background: @brand-primary;
+		}
+
+		&.switch-success {
+			background: @brand-success;
+		}
+
+		&.switch-info {
+			background: @brand-info;
+		}
+
+		&.switch-warning {
+			background: @brand-warning;
+		}
+
+		&.switch-danger {
+			background: @brand-danger;
+		}
+
+		&.switch-inverse {
+			background: @brand-inverse;
+		}
+	}
+}

@@ -1,0 +1,9 @@
+.form-login {
+	top:10%;
+}
+.form-login .form {
+	background: #fff;
+	padding: 6px;
+	border-radius: 10px;
+	border:1px solid #EBEBEB;
+}

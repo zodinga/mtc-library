@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Libero - Flat Admin Interface</title>
+	<!-- BOOTSTRAPS -->
+	<link type="text/css" href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<!-- THEMES -->
+	<link type="text/css" href="css/theme.css" rel="stylesheet">
+	<!--ICONS-->
+	<link type="text/css" href="icons/font-awesome/css/font-awesome.css" rel="stylesheet">
+	<!--FONTS-->
+	<link type='text/css'href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic,500italic,500,300italic,300' rel='stylesheet'>
+	<link type="text/css" href='http://fonts.googleapis.com/css?family=Fugaz+One|Leckerli+One' rel='stylesheet'>
+	<!--JAVASCRIPTS-->
+	<script src="js/jquery-1.9.1.min.js"></script>
+	<script src="js/jquery-ui-1.10.1.custom.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="frame"><div class="sidebar">
+<div class="wrapper">
+
+	<a href="page-profile.html" class="profile">
+		<img src="img/samples/avatar-2.jpg" class="avatar pull-left" width="30" style="margin-right: 15px; border-radius: 4px">
+		Andy Norman
+	</a>
+	<ul class="nav nav-list">
+		<li class="nav-header">Pages</li>
+		<li>
+			<a href="index.html"><i class="icon-dashboard"></i>Dashboard</a>
+		</li>
+		<!-- <li>
+			<a href="activity.html"><i class="icon-bullhorn"></i>Activity</a>
+		</li> -->
+		<li>
+			<a href="page-message.html"><i class="icon-inbox"></i>Message<b class="label">6</b></a>
+		</li>
+		<li>
+			<a href="page-people.html"><i class="icon-group"></i>People</a>
+		</li>
+		<li>
+			<a href="page-calendar.html"><i class="icon-calendar"></i>Calendar</a>
+		</li>
+		<li>
+			<a href="page-gallery.html"><i class="icon-picture"></i>Gallery</a>
+		</li>
+		<li>
+			<a href="page-profile.html"><i class="icon-user"></i>Profile</a>
+		</li>
+
+		<!--SEPARATE-->
+
+		<li class="nav-header">Elements</li>
+		<li>
+			<a href="element-typography.html"><i class="icon-text-width"></i>Typography</a>
+		</li>
+		<li class="active" >
+			<a href="element-layout.html"><i class="icon-desktop"></i>Layout</a>
+		</li>
+		<li>
+			<a href="element-tables.html"><i class="icon-table"></i>Tables</a>
+		</li>
+		<li>
+			<a href="element-form.html"><i class="icon-list-alt"></i>Form</a>
+		</li>
+		<li>
+			<a href="element-buttons.html"><i class="icon-pushpin"></i>Buttons</a>
+		</li>
+		<li>
+			<a href="element-icons.html"><i class="icon-truck"></i>Icons</a>
+		</li>
+		<li>
+			<a href="element-charts.html"><i class="icon-bar-chart"></i>Charts</a>
+		</li>
+
+		<!--SEPARATE-->
+
+		<li class="nav-header">Extra</li>
+		<li>
+			<a href="extra-login.html"><i class="icon-key"></i>Login</a>
+		</li>
+
+		<!--SEPARATE-->
+
+		<li class="nav-header">Bandwidth Transfer</li>
+		<li>
+			<div class="progress progress-danger small">
+				<div class="bar" style="width: 80%;"></div>
+			</div>
+			<div>19419.94 / 12000 MB</div>
+		</li>
+		<li class="nav-header">Disk Space Usage</li>
+		<li>
+			<div class="progress small">
+				<div class="bar" style="width: 20%;"></div>
+			</div>
+			<div>304.44 / 8000 MB</div>
+		</li>
+	</ul>
+</div>
+</div>
+<div class="content">
+
+	<div class="navbar navbar-static-tops">
+	<div class="navbar-inner">		
+		<a href="javascript:void(0);" class="btn pull-left toggle-sidebar hidden-desktop"><i class="icon-reorder"></i></a>
+		<a class="brand" href="index.html">libero</a>
+	</div>
+</div><!--/.navbar -->	
+	<div class="content-head">
+		<ul class="breadcrumb">
+			<li><a href="#">Home</a> <span class="divider"><i class="icon-angle-right"></i></span></li>
+			<li class="active">Layout</li>
+		</ul>
+		<h2>Layout</h2>
+		<div class="muted">
+			Sample description for layout page
+		</div>
+	</div>
+	<div class="content-body">
+		<section class="row-fluid">
+			<div class="span12">
+				<section class="module">
+					<div class="module-head">
+						<b>Popover</b>
+					</div><!--/.module-head-->
+					<div class="module-body">
+						<ul class="unstyled inline text-center">
+							<li><a href="#" class="btn btn-large sample-popover" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." title="" data-original-title="Popover on top">Popover on top</a></li>
+							<li><a href="#" class="btn btn-large sample-popover" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." title="" data-original-title="Popover on right">Popover on right</a></li>
+							<li><a href="#" class="btn btn-large sample-popover" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." title="" data-original-title="Popover on bottom">Popover on bottom</a></li>
+							<li><a href="#" class="btn btn-large sample-popover" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." title="" data-original-title="Popover on left">Popover on left</a></li>
+						</ul>
+					</div><!--/.module-body-->
+				</section><!--/.module-->
+			</div>
+		</section>
+
+		<section class="row-fluid">
+			<div class="span12">
+				<section class="module">
+					<div class="module-head">
+						<b>Modal</b>
+					</div><!--/.module-head-->
+					<div class="module-body">
+						<!-- Button to trigger modal -->
+						<a href="#myModal" role="button" class="btn btn-large" data-toggle="modal">Launch demo modal</a>
+						 
+						<!-- Modal -->
+						<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+								<h3 id="myModalLabel">Modal header</h3>
+							</div>
+							<div class="modal-body">
+								<p>One fine body…</p>
+							</div>
+							<div class="modal-footer">
+								<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+								<button class="btn btn-primary">Save changes</button>
+							</div>
+						</div>
+					</div><!--/.module-body-->
+				</section><!--/.module-->
+			</div>
+		</section>
+
+		<section class="row-fluid">
+			<div class="span12">
+				<section class="module">
+					<div class="module-head">
+						<b>Text Widget</b>
+					</div><!--/.module-head-->
+					<div class="module-body">
+						<p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+					</div><!--/.module-body-->
+				</section><!--/.module-->
+			</div>
+		</section>
+
+		<section class="row-fluid">
+			<div class="span4">
+				<section class="module">
+					<div class="module-head">
+						<b>Text Widget</b>
+					</div><!--/.module-head-->
+					<div class="module-body">
+						<p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+					</div><!--/.module-body-->
+				</section><!--/.module-->
+			</div>
+			<div class="span4">
+				<section class="module">
+					<div class="module-head">
+						<b>Text Widget</b>
+					</div><!--/.module-head-->
+					<div class="module-body">
+						<p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+					</div><!--/.module-body-->
+				</section><!--/.module-->
+			</div>
+			<div class="span4">
+				<section class="module">
+					<div class="module-head">
+						<b>Text Widget</b>
+					</div><!--/.module-head-->
+					<div class="module-body">
+						<p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+					</div><!--/.module-body-->
+				</section><!--/.module-->
+			</div>
+		</section>
+
+		<section class="row-fluid">
+			<div class="span12">
+				<section class="module">
+					<div class="accordion">
+						<div class="accordion-group">
+							<div class="module-head accordion-heading">
+								<a class="accordion-toggle" data-toggle="collapse" data-parent=".accordion" href="#collapseOne">
+									Collapsible Group Item #1
+								</a>
+							</div>
+							<div id="collapseOne" class="accordion-body in collapse" style="height: auto;">
+								<div class="accordion-inner">
+								Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.
+								</div>
+							</div>
+						</div>
+						<div class="accordion-group">
+							<div class="module-head accordion-heading">
+								<a class="accordion-toggle" data-toggle="collapse" data-parent=".accordion" href="#collapseTwo">
+									Collapsible Group Item #2
+								</a>
+							</div>
+							<div id="collapseTwo" class="accordion-body collapse" style="height: 0px;">
+								<div class="accordion-inner">
+									Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.
+								</div>
+							</div>
+						</div>
+						<div class="accordion-group">
+							<div class="module-head accordion-heading">
+								<a class="accordion-toggle" data-toggle="collapse" data-parent=".accordion" href="#collapseThree">
+									Collapsible Group Item #2
+								</a>
+							</div>
+							<div id="collapseThree" class="accordion-body collapse" style="height: 0px;">
+								<div class="accordion-inner">
+									Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial keffiyeh echo park vegan.
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</section>
+
+		<section class="row-fluid">
+			<div class="span6">
+				<section class="module">
+					<div class="module-head">
+						<ul class="module-control pull-left">
+							<li class="active"><a href="#tab-1" data-toggle="tab">First</a></li>
+							<li class=""><a href="#tab-2" data-toggle="tab">Second</a></li>
+							<li class=""><a href="#tab-3" data-toggle="tab">Third</a></li>
+						</ul>
+					</div><!--/.module-head-->
+					<div class="module-body">
+						<div class="tab">
+							<div class="tab-content">
+								<div class="tab-pane fade active in" id="tab-1">
+									<p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+								</div>
+								<div class="tab-pane fade" id="tab-2">
+									<p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
+								</div>
+								<div class="tab-pane fade" id="tab-3">
+									<p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+								</div>
+							</div>
+						</div>
+					</div><!--/.module-body-->
+				</section>
+			</div>
+			<div class="span6">
+				<section class="module">
+					<div class="module-head">
+						<ul class="module-control pull-right">
+							<li class="active"><a href="#tab-4" data-toggle="tab">First</a></li>
+							<li class=""><a href="#tab-5" data-toggle="tab">Second</a></li>
+							<li class=""><a href="#tab-6" data-toggle="tab">Third</a></li>
+						</ul>
+					</div><!--/.module-head-->
+					<div class="module-body">
+						<div class="tab">
+							<div class="tab-content">
+								<div class="tab-pane fade active in" id="tab-4">
+									<p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+								</div>
+								<div class="tab-pane fade" id="tab-5">
+									<p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
+								</div>
+								<div class="tab-pane fade" id="tab-6">
+									<p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+								</div>
+							</div>
+						</div>
+					</div><!--/.module-body-->
+				</section>
+			</div>
+		</section>
+
+		<section class="row-fluid">
+			<div class="span12">
+				<section class="module">
+					<div class="module-head">
+						<b>Module Head & Dropdown Options</b>
+						<ul class="module-control pull-right">
+							<li class="dropdown pull-right">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-cog"></i></a>
+								<ul class="dropdown-menu">
+									<li class=""><a href="#tab-dropdown-1" data-toggle="tab">Dropdown 1</a></li>
+									<li class=""><a href="#tab-dropdown-2" data-toggle="tab">Dropdown 2</a></li>
+									<li class=""><a href="#tab-dropdown-3" data-toggle="tab">Dropdown 2</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div><!--/.module-head-->
+					<div class="module-body">
+						<div class="tab">
+							<div class="tab-content">
+								<div class="tab-pane fade active in" id="tab-dropdown-1">
+									<p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+								</div>
+								<div class="tab-pane fade" id="tab-dropdown-2">
+									<p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
+								</div>
+								<div class="tab-pane fade active in" id="tab-dropdown-3">
+									<p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+								</div>
+							</div>
+						</div>
+					</div><!--/.module-body-->
+				</section>
+			</div>
+		</section>
+
+		<section class="row-fluid">
+			<div class="span12">
+				<section class="module">
+					<div class="module-head">
+						<b>Progress Bar</b>
+					</div><!--/.module-head-->
+					<div class="module-body">
+						<div class="row-fluid">
+							<div class="span4">
+								<p class="muted">Basic</p>
+
+								<div class="progress">
+									<div class="bar" style="width: 40%;"></div>
+								</div>
+								<div class="progress progress-info">
+									<div class="bar" style="width: 50%;"></div>
+								</div>
+								<div class="progress progress-success">
+									<div class="bar" style="width: 60%;"></div>
+								</div>
+								<div class="progress progress-warning">
+									<div class="bar" style="width: 30%;"></div>
+								</div>
+								<div class="progress progress-danger">
+									<div class="bar" style="width: 40%;"></div>
+								</div>
+							</div>
+
+							<div class="span4">
+								<p class="muted">Striped</p>
+
+								<div class="progress progress-striped">
+									<div class="bar" style="width: 40%;"></div>
+								</div>
+								<div class="progress progress-striped progress-info">
+									<div class="bar" style="width: 50%;"></div>
+								</div>
+								<div class="progress progress-striped progress-success">
+									<div class="bar" style="width: 60%;"></div>
+								</div>
+								<div class="progress progress-striped progress-warning">
+									<div class="bar" style="width: 30%;"></div>
+								</div>
+								<div class="progress progress-striped progress-danger">
+									<div class="bar" style="width: 40%;"></div>
+								</div>
+							</div>
+
+							<div class="span4">
+								<p class="muted">Animated</p>
+
+								<div class="progress progress-striped active">
+									<div class="bar" style="width: 40%;"></div>
+								</div>
+								<div class="progress progress-striped active progress-info">
+									<div class="bar" style="width: 50%;"></div>
+								</div>
+								<div class="progress progress-striped active progress-success">
+									<div class="bar" style="width: 60%;"></div>
+								</div>
+								<div class="progress progress-striped active progress-warning">
+									<div class="bar" style="width: 30%;"></div>
+								</div>
+								<div class="progress progress-striped active progress-danger">
+									<div class="bar" style="width: 40%;"></div>
+								</div>
+							</div>
+						</div>
+
+						<hr>
+
+						<div class="row-fluid">
+							<div class="span4">
+								<p class="muted">Basic - Medium</p>
+
+								<div class="progress medium">
+									<div class="bar" style="width: 40%;"></div>
+								</div>
+								<div class="progress medium progress-info">
+									<div class="bar" style="width: 50%;"></div>
+								</div>
+								<div class="progress medium progress-success">
+									<div class="bar" style="width: 60%;"></div>
+								</div>
+								<div class="progress medium progress-warning">
+									<div class="bar" style="width: 30%;"></div>
+								</div>
+								<div class="progress medium progress-danger">
+									<div class="bar" style="width: 40%;"></div>
+								</div>
+							</div>
+
+							<div class="span4">
+								<p class="muted">Striped - Medium</p>
+
+								<div class="progress medium progress-striped">
+									<div class="bar" style="width: 40%;"></div>
+								</div>
+								<div class="progress medium progress-striped progress-info">
+									<div class="bar" style="width: 50%;"></div>
+								</div>
+								<div class="progress medium progress-striped progress-success">
+									<div class="bar" style="width: 60%;"></div>
+								</div>
+								<div class="progress medium progress-striped progress-warning">
+									<div class="bar" style="width: 30%;"></div>
+								</div>
+								<div class="progress medium progress-striped progress-danger">
+									<div class="bar" style="width: 40%;"></div>
+								</div>
+							</div>
+
+							<div class="span4">
+								<p class="muted">Animated - Medium</p>
+
+								<div class="progress medium progress-striped active">
+									<div class="bar" style="width: 40%;"></div>
+								</div>
+								<div class="progress medium progress-striped active progress-info">
+									<div class="bar" style="width: 50%;"></div>
+								</div>
+								<div class="progress medium progress-striped active progress-success">
+									<div class="bar" style="width: 60%;"></div>
+								</div>
+								<div class="progress medium progress-striped active progress-warning">
+									<div class="bar" style="width: 30%;"></div>
+								</div>
+								<div class="progress medium progress-striped active progress-danger">
+									<div class="bar" style="width: 40%;"></div>
+								</div>
+							</div>
+						</div>
+
+						<hr>
+
+						<div class="row-fluid">
+							<div class="span4">
+								<p class="muted">Basic - Small</p>
+
+								<div class="progress small">
+									<div class="bar" style="width: 40%;"></div>
+								</div>
+								<div class="progress small progress-info">
+									<div class="bar" style="width: 50%;"></div>
+								</div>
+								<div class="progress small progress-success">
+									<div class="bar" style="width: 60%;"></div>
+								</div>
+								<div class="progress small progress-warning">
+									<div class="bar" style="width: 30%;"></div>
+								</div>
+								<div class="progress small progress-danger">
+									<div class="bar" style="width: 40%;"></div>
+								</div>
+							</div>
+
+							<div class="span4">
+								<p class="muted">Striped - Small</p>
+
+								<div class="progress small progress-striped">
+									<div class="bar" style="width: 40%;"></div>
+								</div>
+								<div class="progress small progress-striped progress-info">
+									<div class="bar" style="width: 50%;"></div>
+								</div>
+								<div class="progress small progress-striped progress-success">
+									<div class="bar" style="width: 60%;"></div>
+								</div>
+								<div class="progress small progress-striped progress-warning">
+									<div class="bar" style="width: 30%;"></div>
+								</div>
+								<div class="progress small progress-striped progress-danger">
+									<div class="bar" style="width: 40%;"></div>
+								</div>
+							</div>
+
+							<div class="span4">
+								<p class="muted">Animated - Small</p>
+
+								<div class="progress small progress-striped active">
+									<div class="bar" style="width: 40%;"></div>
+								</div>
+								<div class="progress small progress-striped active progress-info">
+									<div class="bar" style="width: 50%;"></div>
+								</div>
+								<div class="progress small progress-striped active progress-success">
+									<div class="bar" style="width: 60%;"></div>
+								</div>
+								<div class="progress small progress-striped active progress-warning">
+									<div class="bar" style="width: 30%;"></div>
+								</div>
+								<div class="progress small progress-striped active progress-danger">
+									<div class="bar" style="width: 40%;"></div>
+								</div>
+							</div>
+						</div>
+					</div><!--/.module-body-->
+				</section>
+			</div>
+		</section>
+
+		<section class="row-fluid">
+			<div class="span12">
+				<section class="module">
+					<div class="module-head">
+						<b>Alerts</b>
+					</div><!--/.module-head-->
+					<div class="module-body">
+						<div class="row-fluid">
+							<div class="span6">
+								<p class="muted">Default alert</p>
+								<div class="alert">
+								  <a href="#" class="close" data-dismiss="alert"><i class="icon-remove"></i></a>
+								  <strong>Warning!</strong> Best check yo self, you're not looking too good.
+								</div>
+
+								<p class="muted">Error alert</p>
+								<div class="alert alert-error">
+								  <a href="#" class="close" data-dismiss="alert"><i class="icon-remove"></i></a>
+								  <strong>Oh snap!</strong> Change a few things up and try submitting again.
+								</div>
+							</div>
+							<div class="span6">
+								<p class="muted">Success alert</p>
+								<div class="alert alert-success">
+								  <a href="#" class="close" data-dismiss="alert"><i class="icon-remove"></i></a>
+								  <strong>Well done!</strong> You successfully read this important alert message.
+								</div>
+
+								<p class="muted">Information alert</p>
+								<div class="alert alert-info">
+								  <a href="#" class="close" data-dismiss="alert"><i class="icon-remove"></i></a>
+								  <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+								</div>
+							</div>
+						</div>
+					</div><!--/.module-body-->
+				</section>
+			</div>
+		</section>
+
+
+
+
+
+
+
+
+
+
+
+		<section class="row-fluid">
+			<div class="span12">
+				<section class="module">
+					<div class="module-head">
+						<b>Text Widget</b>
+					</div><!--/.module-head-->
+					<div class="module-body">
+						<p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+					</div><!--/.module-body-->
+				</section>
+			</div>
+		</section>
+	</div>
+</div><!--/.content-->
+
+</div><!-- /.frame -->
+
+
+
+<!-- WYSIHTML5 TEXT EDITOR -->
+<script src="js/wysihtml5/advanced.js"></script>
+<script src="js/wysihtml5/wysihtml5-0.3.0.min.js"></script>
+<!-- AUTOSIZE TEXTAREA -->
+<script src='js/autosize/jquery.autosize-min.js'></script>
+<!-- BOOTSTRAP DATEPICKER -->
+<script src="js/bootstrap-datepicker.js"></script>
+<!-- FLOT CHART -->
+<script src="js/flot/jquery.flot.js"></script>
+<script src="js/flot/jquery.flot.pie.js"></script>
+<script src="js/flot/jquery.flot.resize.js"></script>
+<!-- FULLCALENDAR -->
+<script src="js/fullcalendar/fullcalendar.custom.js"></script> -->
+<!-- MIXITUP -->
+<script src="js/mixitup/jquery.mixitup.min.js"></script>
+<!-- THEME -->
+<script src="js/theme.js"></script>
+<!-- SCRIPTS: FLOT GRAPH BASIC -->
+<script type="text/javascript">
+$(function () {
+	var d1 = [ [0, 1], [1, 14], [2, 5], [3, 4], [4, 5], [5, 1], [6, 14], [7, 5],  [8, 5] ];
+	var d2 = [ [0, 5], [1, 2], [2, 10], [3, 1], [4, 9],  [5, 5], [6, 2], [7, 10], [8, 8] ];
+
+	var plot = $.plot($("#placeholder"), 
+	[ { data: d1, label: "Data A" }, { data: d2, label: "Data B" } ], {
+		lines: { 
+			show: true, 
+			fill: false, 
+			lineWidth: 1,
+			lineColor: "#fc0" 
+		},
+		points: { 
+			show: true, 
+			lineWidth: 4 
+		},
+		grid: {
+			clickable: true,
+			hoverable: true,
+			autoHighlight: true,
+			mouseActiveRadius: 10,
+			aboveData: true,
+			backgroundColor: "#fafafa",
+			borderWidth: 0,
+			borderColor: "#fc0",
+			minBorderMargin: 25,
+		},
+		colors: [ "#090", "#099",  "#609", "#900"],
+		shadowSize: 0
+	});
+
+	function showTooltip(x, y, contents) {
+		$('<div id="gridtip">' + contents + '</div>').css( {
+			position: 'absolute',
+			display: 'none',
+			top: y + 5,
+			left: x + 5
+		}).appendTo("body").fadeIn(300);
+	}
+
+	var previousPoint = null;
+	$("#placeholder").bind("plothover", function (event, pos, item) {
+		$("#x").text(pos.x.toFixed(2));
+		$("#y").text(pos.y.toFixed(2));
+
+		if (item) {
+			if (previousPoint != item.dataIndex) {
+				previousPoint = item.dataIndex;
+				
+				$("#gridtip").remove();
+				var x = item.datapoint[0].toFixed(0),
+					y = item.datapoint[1].toFixed(0);
+				
+				showTooltip(item.pageX, item.pageY,
+							"x : " + x + "&nbsp;&nbsp;&nbsp; y : " + y);
+			}
+		}
+		else {
+			$("#gridtip").remove();
+			previousPoint = null;            
+		}
+	});
+});
+</script>
+
+<!-- SCRIPTS: FLOT GRAPH ADVANCE -->
+<script type="text/javascript">
+$(function () {
+	var d1 = [ [0, 1], [1, 14], [2, 5], [3, 4], [4, 5], [5, 1], [6, 14], [7, 5],  [8, 5] ];
+	var d2 = [ [0, 5], [1, 2], [2, 10], [3, 1], [4, 9],  [5, 5], [6, 2], [7, 10], [8, 8] ];
+
+	var plot = $.plot($("#placeholder2"),
+		   [ { data: d1, label: "Data Y"}, { data: d2, label: "Data X" } ], {
+				lines: { 
+					show: true, 
+					fill: true, /*SWITCHED*/
+					lineWidth: 2 
+				},
+				points: { 
+					show: true, 
+					lineWidth: 3
+				},
+				grid: {
+					clickable: true,
+					hoverable: true,
+					autoHighlight: true,
+					mouseActiveRadius: 10,
+					aboveData: true,
+					backgroundColor: "#fafafa",
+					borderWidth: 0,
+					minBorderMargin: 25,
+				},
+				colors: [ "#090", "#099",  "#609", "#900"],
+				shadowSize: 0
+			 });
+
+	function showTooltip(x, y, contents) {
+		$('<div id="gridtip">' + contents + '</div>').css( {
+			position: 'absolute',
+			display: 'none',
+			top: y + 5,
+			left: x + 5
+		}).appendTo("body").fadeIn(300);
+	}
+
+	var previousPoint = null;
+	$("#placeholder2").bind("plothover", function (event, pos, item) {
+		$("#x").text(pos.x.toFixed(2));
+		$("#y").text(pos.y.toFixed(2));
+
+		if (item) {
+			if (previousPoint != item.dataIndex) {
+				previousPoint = item.dataIndex;
+				
+				$("#gridtip").remove();
+				var x = item.datapoint[0].toFixed(0),
+					y = item.datapoint[1].toFixed(0);
+				
+				showTooltip(item.pageX, item.pageY,
+							"x : " + x + "&nbsp;&nbsp;&nbsp; y : " + y);
+			}
+		}
+		else {
+			$("#gridtip").remove();
+			previousPoint = null;            
+		}
+	});
+});
+</script>
+
+<!-- SCRIPTS: CHARTS -->
+<script>
+	// PREDEFINED DATA
+	var data = [
+					{ label: "Series1",  data: [[1,10]]},
+					{ label: "Series2",  data: [[1,30]]},
+					{ label: "Series3",  data: [[1,90]]}
+				];
+
+	// // DEFAULT
+	// $.plot($("#pie-default"), data, 
+	// {
+	// 	series: {
+	// 		pie: {
+	// 			show: true
+	// 		}
+	// 	}
+	// });
+
+	// DEFINE ACTIONS FOR pieHover & pieClick
+	function pieHover(event, pos, obj) 
+	{
+		if (!obj)
+					return;
+		percent = parseFloat(obj.series.percent).toFixed(2);
+		$("#hover").html('<span>'+obj.series.label+' - '+percent+'%</span>');
+	}
+
+	function pieClick(event, pos, obj) 
+	{
+		if (!obj)
+					return;
+		percent = parseFloat(obj.series.percent).toFixed(2);
+		alert(''+obj.series.label+': '+percent+'%');
+	}
+
+	// DONUT
+	$.plot($("#pie-donut"), data, 
+	{
+		series: {
+			pie: { 
+				innerRadius: 50,
+				show: true
+			}
+		}
+	});
+
+	// DONUT + INTERACTIVE
+	$.plot($("#pie-interactive"), data,
+	{
+			series: {
+				pie: {
+					innerRadius: 50,
+					show: true
+				}
+			},
+			grid: {
+				hoverable: true,
+				clickable: true
+			}
+	});
+
+	$("#pie-interactive").bind("plothover", pieHover);
+	$("#pie-interactive").bind("plotclick", pieClick);
+</script>
+</body>
